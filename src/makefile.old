@@ -1,0 +1,63 @@
+# Simple Makefile
+# Volker Oth (c) 1999
+
+include $(AVR)/include/make1
+
+########### change this lines according to your project ##################
+
+#put the name of the target mcu here (at90s8515, at90s8535, attiny22, atmega603 etc.)
+    MCU = atmega128
+
+#put the name of the target file here (without extension)
+	TRG = imm
+
+#put your C sourcefiles here 
+	SRC = imm.c ahdlc.c conio.c console.c ipcp.c ircmd.c lcp.c memory.c mip.c modem.c msg.c mtcp.c mudp.c pap.c ppp.c resolve.c sreg.c time.c utils.c
+
+#put additional assembler source file here
+	ASRC = 
+
+#additional libraries and object files to link
+	LIB = 
+
+#additional includes to compile
+	INC = 
+
+#compiler flags
+	CPFLAGS	= -Os -DCPU_AVR -Wall -Wstrict-prototypes -Wa,-ahlms=$(<:.c=.lst) -I$(INC)  -gnatl
+
+#assembler flags
+	ASFLAGS = -gstabs
+
+#linker flags
+	LDFLAGS = -Wl,-Map=$(TRG).map,--cref
+
+########### you should not need to change the following line #############
+include $(AVR)/include/make2
+		  
+###### dependecies, add any dependencies you need here ###################
+	PPPINC = ppp.h ahdlc.h lcp.h ipcp.h pap.h pppconfig.h
+
+*.o			: mTypes.h debug.h
+imm.o		: imm.c $(PPPINC)
+conio.o		: conio.c
+console.o	: console.c
+ipcp.o		: ipcp.c $(PPPINC)
+ircmd.o		: ircmd.c
+lcp.o		: lcp.c $(PPPINC)
+memory.o	: memory.c memory.h
+mip.o		: mip.c mip.h
+modem.o		: modem.c modem.h
+msg.o		: msg.c msg.h
+mtcp.o		: mtcp.c mtcp.h
+mudp.o		: mudp.c mudp.h
+pap.o		: pap.c $(PPPINC)
+ppp.o		: ppp.c $(PPPINC)
+resolve.o	: resolve.c resolve.h
+sreg.o		: sreg.c sreg.h
+time.o		: time.c time.h
+utils.o		: utils.c utils.h
+
+
+
+

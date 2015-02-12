@@ -1,0 +1,203 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ppp - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\mike\LOCALS~1\Temp\RSPF2B.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/ppp.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\projects\nchip.com\projects\ppp\ahdlc.c"
+"C:\projects\nchip.com\projects\ppp\autobaud.c"
+"C:\projects\nchip.com\projects\ppp\conio.c"
+"C:\projects\nchip.com\projects\ppp\console.c"
+"C:\projects\nchip.com\projects\ppp\globals.c"
+"C:\projects\nchip.com\projects\ppp\imm.c"
+"C:\projects\nchip.com\projects\ppp\ipcp.c"
+"C:\projects\nchip.com\projects\ppp\ircmd.c"
+"C:\projects\nchip.com\projects\ppp\lcp.c"
+"C:\projects\nchip.com\projects\ppp\memory.c"
+"C:\projects\nchip.com\projects\ppp\mip.c"
+"C:\projects\nchip.com\projects\ppp\modem.c"
+"C:\projects\nchip.com\projects\ppp\msg.c"
+"C:\projects\nchip.com\projects\ppp\mtcp.c"
+"C:\projects\nchip.com\projects\ppp\mudp.c"
+"C:\projects\nchip.com\projects\ppp\pap.c"
+"C:\projects\nchip.com\projects\ppp\ppp.c"
+"C:\projects\nchip.com\projects\ppp\resolve.c"
+"C:\projects\nchip.com\projects\ppp\sreg.c"
+"C:\projects\nchip.com\projects\ppp\time.c"
+"C:\projects\nchip.com\projects\ppp\udpcmd.c"
+"C:\projects\nchip.com\projects\ppp\utils.c"
+"C:\projects\nchip.com\projects\ppp\wserial.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mike\LOCALS~1\Temp\RSPF2B.tmp" 
+Creating temporary file "C:\DOCUME~1\mike\LOCALS~1\Temp\RSPF2C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/ppp.pdb" /debug /machine:I386 /out:"Debug/ppp.exe" /pdbtype:sept 
+.\Debug\ahdlc.obj
+.\Debug\autobaud.obj
+.\Debug\conio.obj
+.\Debug\console.obj
+.\Debug\globals.obj
+.\Debug\imm.obj
+.\Debug\ipcp.obj
+.\Debug\ircmd.obj
+.\Debug\lcp.obj
+.\Debug\memory.obj
+.\Debug\mip.obj
+.\Debug\modem.obj
+.\Debug\msg.obj
+.\Debug\mtcp.obj
+.\Debug\mudp.obj
+.\Debug\pap.obj
+.\Debug\ppp.obj
+.\Debug\resolve.obj
+.\Debug\sreg.obj
+.\Debug\time.obj
+.\Debug\udpcmd.obj
+.\Debug\utils.obj
+.\Debug\wserial.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\mike\LOCALS~1\Temp\RSPF2C.tmp"
+<h3>Output Window</h3>
+Compiling...
+ahdlc.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+autobaud.c
+conio.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+console.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+globals.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+imm.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+c:\projects\nchip.com\projects\ppp\imm.c(117) : warning C4028: formal parameter 1 different from declaration
+c:\projects\nchip.com\projects\ppp\imm.c(117) : warning C4024: 'signal' : different types for formal and actual parameter 2
+c:\projects\nchip.com\projects\ppp\imm.c(122) : warning C4013: 'crcadd' undefined; assuming extern returning int
+c:\projects\nchip.com\projects\ppp\imm.c(159) : warning C4013: 'sei' undefined; assuming extern returning int
+c:\projects\nchip.com\projects\ppp\imm.c(256) : error C2065: 'PORTB' : undeclared identifier
+ipcp.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+ircmd.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+c:\projects\nchip.com\projects\ppp\ircmd.c(187) : warning C4013: 'bit_is_clear' undefined; assuming extern returning int
+c:\projects\nchip.com\projects\ppp\ircmd.c(187) : error C2065: 'PINE' : undeclared identifier
+c:\projects\nchip.com\projects\ppp\ircmd.c(271) : warning C4244: '=' : conversion from 'short ' to 'unsigned char ', possible loss of data
+c:\projects\nchip.com\projects\ppp\ircmd.c(314) : error C2065: 'PORTG' : undeclared identifier
+c:\projects\nchip.com\projects\ppp\ircmd.c(438) : error C2065: 'PORTD' : undeclared identifier
+c:\projects\nchip.com\projects\ppp\ircmd.c(591) : warning C4133: 'function' : incompatible types - from 'unsigned char *' to 'struct _IPADDR *'
+c:\projects\nchip.com\projects\ppp\ircmd.c(799) : warning C4133: 'function' : incompatible types - from 'unsigned short *' to 'unsigned char *'
+c:\projects\nchip.com\projects\ppp\ircmd.c(978) : error C2065: 'PORTB' : undeclared identifier
+c:\projects\nchip.com\projects\ppp\ircmd.c(994) : error C2065: 'PING' : undeclared identifier
+c:\projects\nchip.com\projects\ppp\ircmd.c(996) : error C2065: 'PORTE' : undeclared identifier
+c:\projects\nchip.com\projects\ppp\ircmd.c(1019) : error C2065: 'PIND' : undeclared identifier
+c:\projects\nchip.com\projects\ppp\ircmd.c(1155) : warning C4013: 'tcp_send' undefined; assuming extern returning int
+c:\projects\nchip.com\projects\ppp\ircmd.c(1285) : error C2065: 'PINC' : undeclared identifier
+c:\projects\nchip.com\projects\ppp\ircmd.c(1515) : warning C4013: 'CONSOLE_pushch' undefined; assuming extern returning int
+lcp.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+memory.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+mip.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+modem.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+c:\projects\nchip.com\projects\ppp\modem.c(66) : warning C4020: 'OpenSerial' : too many actual parameters
+c:\projects\nchip.com\projects\ppp\modem.c(66) : warning C4047: '==' : 'const int ' differs in levels of indirection from 'void *'
+msg.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+mtcp.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+c:\projects\nchip.com\projects\ppp\mtcp.c(199) : warning C4013: 'TIMER_Get_TCP_HundredMS' undefined; assuming extern returning int
+c:\projects\nchip.com\projects\ppp\mtcp.c(471) : warning C4133: '=' : incompatible types - from 'void (__cdecl *)(unsigned char ,unsigned char *,unsigned short )' to 'short (__cdecl *)(unsigned char ,unsigned char *,unsigned short )'
+mudp.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+c:\projects\nchip.com\projects\ppp\mudp.c(117) : warning C4133: 'function' : incompatible types - from 'struct udp_h *' to 'unsigned char *'
+pap.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+ppp.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+resolve.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+sreg.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+time.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+udpcmd.c
+c:\program files\microsoft visual studio\vc98\include\winsock.h(727) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(729) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(737) : error C2059: syntax error : '('
+c:\program files\microsoft visual studio\vc98\include\winsock.h(739) : error C2059: syntax error : '('
+c:\projects\nchip.com\projects\ppp\udpcmd.c(110) : error C2065: 'PORTG' : undeclared identifier
+utils.c
+wserial.c
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+ppp.exe - 90 error(s), 15 warning(s)
+</pre>
+</body>
+</html>

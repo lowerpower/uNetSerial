@@ -1,0 +1,82 @@
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=time.lst  -std=gnu99 time.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > time.d; \
+[ -s time.d ] || rm -f time.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=sreg.lst  -std=gnu99 sreg.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > sreg.d; \
+[ -s sreg.d ] || rm -f sreg.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=resolve.lst  -std=gnu99 resolve.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > resolve.d; \
+[ -s resolve.d ] || rm -f resolve.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=ppp.lst  -std=gnu99 ppp.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > ppp.d; \
+[ -s ppp.d ] || rm -f ppp.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=pap.lst  -std=gnu99 pap.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > pap.d; \
+[ -s pap.d ] || rm -f pap.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=mudp.lst  -std=gnu99 mudp.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > mudp.d; \
+[ -s mudp.d ] || rm -f mudp.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=mtcp.lst  -std=gnu99 mtcp.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > mtcp.d; \
+[ -s mtcp.d ] || rm -f mtcp.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=msg.lst  -std=gnu99 msg.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > msg.d; \
+[ -s msg.d ] || rm -f msg.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=modem.lst  -std=gnu99 modem.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > modem.d; \
+[ -s modem.d ] || rm -f modem.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=mip.lst  -std=gnu99 mip.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > mip.d; \
+[ -s mip.d ] || rm -f mip.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=memory.lst  -std=gnu99 memory.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > memory.d; \
+[ -s memory.d ] || rm -f memory.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=lcp.lst  -std=gnu99 lcp.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > lcp.d; \
+[ -s lcp.d ] || rm -f lcp.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=ircmd.lst  -std=gnu99 ircmd.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > ircmd.d; \
+[ -s ircmd.d ] || rm -f ircmd.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=ipcp.lst  -std=gnu99 ipcp.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > ipcp.d; \
+[ -s ipcp.d ] || rm -f ipcp.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=ahdlc.lst  -std=gnu99 ahdlc.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > ahdlc.d; \
+[ -s ahdlc.d ] || rm -f ahdlc.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=autobaud.lst  -std=gnu99 autobaud.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > autobaud.d; \
+[ -s autobaud.d ] || rm -f autobaud.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=imm.lst  -std=gnu99 imm.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > imm.d; \
+[ -s imm.d ] || rm -f imm.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=globals.lst  -std=gnu99 globals.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > globals.d; \
+[ -s globals.d ] || rm -f globals.d
+set -e; avr-gcc -MM -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=ircmd.lst  -std=gnu99 ircmd.c \
+| sed 's,\(.*\)\.o[ :]*,\1.o \1.d : ,g' > ircmd.d; \
+[ -s ircmd.d ] || rm -f ircmd.d
+
+-------- begin --------
+avr-gcc (GCC) 3.3.1
+Copyright (C) 2003 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+Compiling: globals.c
+avr-gcc -c -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=globals.lst  -std=gnu99 globals.c -o globals.o
+
+Compiling: imm.c
+avr-gcc -c -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=imm.lst  -std=gnu99 imm.c -o imm.o
+
+Compiling: autobaud.c
+avr-gcc -c -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=autobaud.lst  -std=gnu99 autobaud.c -o autobaud.o
+
+Compiling: ahdlc.c
+avr-gcc -c -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=ahdlc.lst  -std=gnu99 ahdlc.c -o ahdlc.o
+
+Compiling: ipcp.c
+avr-gcc -c -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=ipcp.lst  -std=gnu99 ipcp.c -o ipcp.o
+
+Compiling: ircmd.c
+avr-gcc -c -mmcu=atmega128 -I. -g -Os -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=ircmd.lst  -std=gnu99 ircmd.c -o ircmd.o

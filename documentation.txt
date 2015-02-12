@@ -1,0 +1,184 @@
+
+uNetSer Command Processor		www.nchip.com		Version <Oct 8, 2003>
+Version 0.5
+
+Commands:
+<required parameter> [optional parameter]
+
+PPP COMMANDS
+------------
+IRC [name]:[password]	- IRC will try to raise a PPP connection. Name and or Passord is
+			optional.  If the ppp peer(peer server) requests PAP the device will used the
+			passed name and password for authentication.  
+			Returns:
+			OK[CR/LF]			if PPP has been raised successfully.
+			FAIL PPP[CR/LF]		ppp timed out or otherwise failed to negotiate a connection
+			AUTH FAIL PPP[CR/LF] if PAP autentication failed.
+
+IRD			- disable the PPP connection and return to command mode.  This will also toggle
+			the modems DTR pin to drop the carrier.
+
+DNS COMMANDS
+------------
+IRN <name>	- This command will try to resolve a name into an IP address using the Domain
+			Name Service protocl.
+			Returns:
+			IP address[CR/LF]	if name was correctly resolved
+			FAIL DNS[CR/LF]		if dns resolution has failed.
+
+ICMP COMMADS
+------------
+IRP <hostname/ip>	- Sends a ping (ICMP Echo Request) and waits for a reply.
+					Returns:
+					OK - [xxx]ms if an ping response was returned
+					FAIL - if there was no response
+
+UDP COMMANDS
+------------
+IRU<cmd>	- Udp commands
+
+IRUB <port>	- binds a UDP port to UPD for receive.
+
+IRUP [ip/name]:[destport]:[sourceport] - Sends a UDP packet to IP:destport from ourip:sourceport.
+			All parameters are optional.  If no parameters are set the packet will be sent
+			to the IPaddress and Port of the last received UDP packet (or zeros if there
+			were none). Source port, if not specifed will be zero or the port set by the
+			last IRU command.
+
+IRUG			- Gets a UDP packet that was received on the port set by the last IRU command.
+			By default the IRG command will return 'NO DATA' if there are no UDP packets 
+			waiting -or- 3 lines followed by the packet data the 3 lines are:
+			IP address of peer that sent packet[CR/LF]
+			Port of peer that send the packet[CR/LF]
+			Length of packet[CR/LF]
+			packet data
+
+			Not there is no [CR/LF] after packet data, and the number of packet data bytes is
+			as specified in the Length of packet field.  The IP address, Port Line and Legth 
+			Line can be turned on or off via the UDP config S-Register.
+
+IRUV		- stops the device from listing on the previously specified port (IRU)
+			Returns:
+			OK[CR/LF]		Always
+
+TCP COMMANDS
+------------
+IRT<socket>:<name/ip>:<destport> - Trys to connect a socket to a remote host at destport.
+			Returns: 
+			OK if socket connected
+			DNS FAIL - if name could not be resolved to IP
+			TCP FAIL - Could not connect to socket.
+			ERROR - Error in passed parameter format.
+
+			If command returns OK the socket is connected in streaming socket mode and
+			any data sent or received on the socket will be sent to/from console serial
+			port.  You may go back to command mode by sending +++ or toggeling the DTR pin.
+			Going back to command mode will not close the socket and socket can be reconnected
+			or dropped by the commands IRR and IRX respectivly.
+
+IRR <socket>-Reconnect to a specifide TCP socket from command mode.
+			Returns:
+			OK [CR/LF]				- if the socket is reconnected
+			FAIL SOCKET DOWN[CR/LF]	- Socket is down.
+
+IRX <socket>-Closes a specified TCP socket. Always returns OK
+
+
+MISC COMMANDS
+-------------
+IRE<I,S,L or location>[=value]	- view or set EEPROM location, (I)nvalidate EEPROM config, 
+								(S)ave EEPROM, config, or (L)oad EEPROM config.
+
+IRS<register>[=value]	- view or set S-Register
+
+IRO			- turn off IR command processor. After issued device will just act as a serial
+			pass through device.  The only way to get back into IR command processor mode is
+			to reset the chip or toggle the DTR pin.
+
+IRM			- toggle the modems DTR pin <this can force modem into command mode and drop modem
+			carrier>
+
+
+S-REGISTERS (subject to change, some serial configs not usable on windows emulation yet)
+----------------------------------------------------------------------------------------
+0			- tcp socket 0 status
+1			- tcp socket 1 status
+2			- udp status
+3			- sw version
+4			- bootloader version
+5			- ip address
+6			- primary DNS server address
+7			- secondary DNS server address
+8			- Modem Baud Rate	- Rate in DEC (see table), Takes effect instantly
+9			- Console Baud Rate - Rate in DEC (see table), Takes effect instantly
+
+a			- IMMConfig			- |DEBUG_SEND|x|x|DATA_MODE_ESC|INBAND ESC|RESULT|ECHO_STREAM|ECHO CMD|
+b			- escapeChar		- this is the char used for IMM escape to cmd mode
+c			- escape_timeout	- this is the guard time between data and escap chars
+d			- TCPStreamTickTime - TCP send timer (0-255 in 10's of MS)
+e			- UDPStreamTickTime - UDP send timer (0-255 in 10's of MS)
+f			- DNS Timeout
+10			- SerialConfig Byte |CAB|CD|CD|x|CCTS|CRTS|MCTS|MRTS|
+11			- ModemBaud
+12			- ConsoleBaud
+13			- ppp_connect_timeout (in seconds 0-255)
+14			- ppp_ACCM			-ACCM for ppp link Highbyte
+15			- ppp_ACCM;			-ACCM for ppp link 
+16			- ppp_ACCM;			-ACCM for ppp link 
+17			- ppp_ACCM;			-ACCM for ppp link Lowbyte
+18			- udp_flags;		- |UDPDAVCHAR|DAVDSR|DAVDAV|DIRECT|LEN|IP|PORT
+
+19			- tcp_connect_timeout (0-255 seconds)
+1a			- tcp_retransmit_timeout (0-255) in 10's of MS
+1b			- ip_ttl
+1c			- ip_tos
+1d			- our_ipaddr;
+1e			- our_ipaddr;
+1f			- our_ipaddr;
+20			- our_ipaddr;	
+21			- peer_ip_addr;
+22			- peer_ip_addr;
+23			- peer_ip_addr;
+24			- peer_ip_addr;
+25			- pri_dns_addr;
+26			- pri_dns_addr;
+27			- pri_dns_addr;
+28			- pri_dns_addr;
+29			- sec_dns_addr;
+2a			- sec_dns_addr;
+2b			- sec_dns_addr;
+2c			- sec_dns_addr;
+//
+// Read Only, writing can crash system
+//
+2d			- ircmd_state
+2e			- ppp_flags
+2f			- lcp_state
+30			- pap_state
+31			- ipcp_state
+32			- ppp_tx_mru (lowbyte)
+33			- ppp_tx_mru (highbyte)
+
+
+EEPROM Memory Map (subject to change, not used for windows)
+-----------------------------------------------------------
+0x0			- if 0xa5 then configuration is valid
+0x01-0x0a	- reserved
+0x0a-0x50	- non-volital configuration storage that mirrors S-Register 0-0x29
+0x51-0x5f	- reserved
+0x60->emax	- reserved for commands procesor code
+
+
+BAUD rate table for AVR for sreg 8 and sreg 9
+---------------------------------------------
+191			=   2400bps
+95			=   4800bps
+47			=   9600bps
+31			=  14400bps	
+23			=  19200bps
+15			=  28800bps
+11			=  38400bps
+7			=  57600bps
+5			=  76800bps
+3			= 115200bps
+1			= 230400bps

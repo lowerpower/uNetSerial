@@ -1,0 +1,622 @@
+GAS LISTING C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s 			page 1
+
+
+   1               		.file	"nboot.c"
+   2               		.arch atmega128
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  10               		.text
+  11               	.global	start
+  12               		.type	start, @function
+  13               	start:
+  14               	/* prologue: frame size=0 */
+  15               	/* prologue end (size=0) */
+  16               	/* #APP */
+  17 0000 0C94 0000 		jmp main
+  18               	/* #NOAPP */
+  19               	/* epilogue: frame size=0 */
+  20 0004 0895      		ret
+  21               	/* epilogue end (size=1) */
+  22               	/* function start size 3 (2) */
+  23               		.size	start, .-start
+  24               		.type	version, @function
+  25               	version:
+  26               	/* prologue: frame size=0 */
+  27               	/* prologue end (size=0) */
+  28 0006 85E0      		ldi r24,lo8(261)
+  29 0008 91E0      		ldi r25,hi8(261)
+  30               	/* epilogue: frame size=0 */
+  31 000a 0895      		ret
+  32               	/* epilogue end (size=1) */
+  33               	/* function version size 3 (2) */
+  34               		.size	version, .-version
+  35               	.global	crcadd
+  36               		.type	crcadd, @function
+  37               	crcadd:
+  38               	/* prologue: frame size=0 */
+  39               	/* prologue end (size=0) */
+  40 000c FC01      		movw r30,r24
+  41 000e 862F      		mov r24,r22
+  42 0010 9927      		clr r25
+  43 0012 8E27      		eor r24,r30
+  44 0014 9F27      		eor r25,r31
+  45 0016 9070      		andi r25,hi8(255)
+  46 0018 9C01      		movw r18,r24
+  47 001a A4E0      		ldi r26,4
+  48 001c 220F      	1:	lsl r18
+  49 001e 331F      		rol r19
+  50 0020 AA95      		dec r26
+  51 0022 E1F7      		brne 1b
+  52 0024 8227      		eor r24,r18
+  53 0026 9327      		eor r25,r19
+  54 0028 9070      		andi r25,hi8(255)
+  55 002a 582F      		mov r21,r24
+  56 002c 4427      		clr r20
+  57 002e 9C01      		movw r18,r24
+GAS LISTING C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s 			page 2
+
+
+  58 0030 63E0      		ldi r22,3
+  59 0032 220F      	1:	lsl r18
+  60 0034 331F      		rol r19
+  61 0036 6A95      		dec r22
+  62 0038 E1F7      		brne 1b
+  63 003a 4227      		eor r20,r18
+  64 003c 5327      		eor r21,r19
+  65 003e 24E0      		ldi r18,4
+  66 0040 9695      	1:	lsr r25
+  67 0042 8795      		ror r24
+  68 0044 2A95      		dec r18
+  69 0046 E1F7      		brne 1b
+  70 0048 4827      		eor r20,r24
+  71 004a 5927      		eor r21,r25
+  72 004c 8F2F      		mov r24,r31
+  73 004e 9927      		clr r25
+  74 0050 8427      		eor r24,r20
+  75 0052 9527      		eor r25,r21
+  76               	/* epilogue: frame size=0 */
+  77 0054 0895      		ret
+  78               	/* epilogue end (size=1) */
+  79               	/* function crcadd size 39 (38) */
+  80               		.size	crcadd, .-crcadd
+  81               	.global	main
+  82               		.type	main, @function
+  83               	main:
+  84               	/* prologue: frame size=256 */
+  85 0056 C0E0      		ldi r28,lo8(__stack - 256)
+  86 0058 D0E0      		ldi r29,hi8(__stack - 256)
+  87 005a DEBF      		out __SP_H__,r29
+  88 005c CDBF      		out __SP_L__,r28
+  89               	/* prologue end (size=4) */
+  90               	/* #APP */
+  91 005e 1124      		clr r1
+  92 0060 F894      		cli
+  93               	/* #NOAPP */
+  94 0062 80E1      		ldi r24,lo8(16)
+  95 0064 87BB      		out 55-0x20,r24
+  96 0066 80EF      		ldi r24,lo8(-16)
+  97 0068 85BB      		out 53-0x20,r24
+  98 006a C49A      		sbi 56-0x20,4
+  99 006c AA24      		clr r10
+ 100 006e BB24      		clr r11
+ 101               	.L9:
+ 102 0070 89E1      		ldi r24,lo8(25)
+ 103 0072 90E0      		ldi r25,hi8(25)
+ 104 0074 A80E      		add r10,r24
+ 105 0076 B91E      		adc r11,r25
+ 106 0078 90ED      		ldi r25,lo8(2000)
+ 107 007a A916      		cp r10,r25
+ 108 007c 97E0      		ldi r25,hi8(2000)
+ 109 007e B906      		cpc r11,r25
+ 110 0080 B8F3      		brlo .L9
+ 111 0082 8091 0000 		lds r24,marker
+ 112 0086 9091 0000 		lds r25,(marker)+1
+ 113 008a 855F      		subi r24,lo8(20981)
+ 114 008c 9145      		sbci r25,hi8(20981)
+GAS LISTING C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s 			page 3
+
+
+ 115 008e 31F0      		breq .L10
+ 116 0090 87E1      		ldi r24,lo8(23)
+ 117 0092 89B9      		out 41-0x20,r24
+ 118 0094 1092 9000 		sts 144,__zero_reg__
+ 119 0098 88E1      		ldi r24,lo8(24)
+ 120 009a 8AB9      		out 42-0x20,r24
+ 121               	.L10:
+ 122 009c 1092 0000 		sts (marker)+1,__zero_reg__
+ 123 00a0 1092 0000 		sts marker,__zero_reg__
+ 124 00a4 84B7      		in r24,84-0x20
+ 125 00a6 8823      		tst r24
+ 126 00a8 29F0      		breq .L11
+ 127 00aa 14BE      		out 84-0x20,__zero_reg__
+ 128 00ac 9F9B      		sbis 51-0x20,7
+ 129 00ae 02C0      		rjmp .L11
+ 130               	/* #APP */
+ 131 00b0 0C94 0000 		jmp 0
+ 132               	/* #NOAPP */
+ 133               	.L11:
+ 134 00b4 1092 0000 		sts (marker)+1,__zero_reg__
+ 135 00b8 1092 0000 		sts marker,__zero_reg__
+ 136 00bc 8AE0      		ldi r24,lo8(10)
+ 137 00be 0E94 0000 		call SendOctet
+ 138 00c2 8DE0      		ldi r24,lo8(13)
+ 139 00c4 0E94 0000 		call SendOctet
+ 140 00c8 8EE6      		ldi r24,lo8(110)
+ 141 00ca 0E94 0000 		call SendOctet
+ 142 00ce 83E4      		ldi r24,lo8(67)
+ 143 00d0 0E94 0000 		call SendOctet
+ 144 00d4 88E6      		ldi r24,lo8(104)
+ 145 00d6 0E94 0000 		call SendOctet
+ 146 00da 89E6      		ldi r24,lo8(105)
+ 147 00dc 0E94 0000 		call SendOctet
+ 148 00e0 80E7      		ldi r24,lo8(112)
+ 149 00e2 0E94 0000 		call SendOctet
+ 150 00e6 80E2      		ldi r24,lo8(32)
+ 151 00e8 0E94 0000 		call SendOctet
+ 152 00ec 82E4      		ldi r24,lo8(66)
+ 153 00ee 0E94 0000 		call SendOctet
+ 154 00f2 8FE6      		ldi r24,lo8(111)
+ 155 00f4 0E94 0000 		call SendOctet
+ 156 00f8 8FE6      		ldi r24,lo8(111)
+ 157 00fa 0E94 0000 		call SendOctet
+ 158 00fe 84E7      		ldi r24,lo8(116)
+ 159 0100 0E94 0000 		call SendOctet
+ 160 0104 8CE6      		ldi r24,lo8(108)
+ 161 0106 0E94 0000 		call SendOctet
+ 162 010a 8FE6      		ldi r24,lo8(111)
+ 163 010c 0E94 0000 		call SendOctet
+ 164 0110 81E6      		ldi r24,lo8(97)
+ 165 0112 0E94 0000 		call SendOctet
+ 166 0116 84E6      		ldi r24,lo8(100)
+ 167 0118 0E94 0000 		call SendOctet
+ 168 011c 85E6      		ldi r24,lo8(101)
+ 169 011e 0E94 0000 		call SendOctet
+ 170 0122 82E7      		ldi r24,lo8(114)
+ 171 0124 0E94 0000 		call SendOctet
+GAS LISTING C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s 			page 4
+
+
+ 172 0128 80E2      		ldi r24,lo8(32)
+ 173 012a 0E94 0000 		call SendOctet
+ 174 012e 86E5      		ldi r24,lo8(86)
+ 175 0130 0E94 0000 		call SendOctet
+ 176 0134 81E3      		ldi r24,lo8(49)
+ 177 0136 0E94 0000 		call SendOctet
+ 178 013a 8EE2      		ldi r24,lo8(46)
+ 179 013c 0E94 0000 		call SendOctet
+ 180 0140 85E3      		ldi r24,lo8(53)
+ 181 0142 0E94 0000 		call SendOctet
+ 182 0146 8AE0      		ldi r24,lo8(10)
+ 183 0148 0E94 0000 		call SendOctet
+ 184 014c 8DE0      		ldi r24,lo8(13)
+ 185 014e 0E94 0000 		call SendOctet
+ 186 0152 B1E0      		ldi r27,lo8(1)
+ 187 0154 AB2E      		mov r10,r27
+ 188 0156 B12C      		mov r11,__zero_reg__
+ 189               	.L13:
+ 190 0158 C49A      		sbi 56-0x20,4
+ 191 015a BE01      		movw r22,r28
+ 192 015c 6F5F      		subi r22,lo8(-(1))
+ 193 015e 7F4F      		sbci r23,hi8(-(1))
+ 194 0160 81E0      		ldi r24,lo8(1)
+ 195 0162 0E94 0000 		call RecvPacket
+ 196 0166 C498      		cbi 56-0x20,4
+ 197 0168 8823      		tst r24
+ 198 016a 11F0      		breq .L16
+ 199 016c 8F3F      		cpi r24,lo8(-1)
+ 200 016e 21F4      		brne .L14
+ 201               	.L16:
+ 202 0170 85E1      		ldi r24,lo8(21)
+ 203 0172 0E94 0000 		call SendOctet
+ 204 0176 F0CF      		rjmp .L13
+ 205               	.L14:
+ 206 0178 9924      		clr r9
+ 207 017a 00E0      		ldi r16,lo8(0)
+ 208 017c 10E0      		ldi r17,hi8(0)
+ 209 017e CC24      		clr r12
+ 210 0180 DD24      		clr r13
+ 211 0182 7601      		movw r14,r12
+ 212               	.L17:
+ 213 0184 8130      		cpi r24,lo8(1)
+ 214 0186 E9F4      		brne .L20
+ 215 0188 8501      		movw r16,r10
+ 216 018a 0170      		andi r16,lo8(1)
+ 217 018c 1070      		andi r17,hi8(1)
+ 218 018e A0FE      		sbrs r10,0
+ 219 0190 03C0      		rjmp .L21
+ 220 0192 00E8      		ldi r16,lo8(128)
+ 221 0194 10E0      		ldi r17,hi8(128)
+ 222 0196 0FC0      		rjmp .L22
+ 223               	.L21:
+ 224 0198 AE01      		movw r20,r28
+ 225 019a 4F5F      		subi r20,lo8(-(1))
+ 226 019c 5F4F      		sbci r21,hi8(-(1))
+ 227 019e C701      		movw r24,r14
+ 228 01a0 B601      		movw r22,r12
+GAS LISTING C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s 			page 5
+
+
+ 229 01a2 0E94 0000 		call FlashPage
+ 230 01a6 80E0      		ldi r24,lo8(256)
+ 231 01a8 91E0      		ldi r25,hi8(256)
+ 232 01aa A0E0      		ldi r26,hlo8(256)
+ 233 01ac B0E0      		ldi r27,hhi8(256)
+ 234 01ae C80E      		add r12,r24
+ 235 01b0 D91E      		adc r13,r25
+ 236 01b2 EA1E      		adc r14,r26
+ 237 01b4 FB1E      		adc r15,r27
+ 238               	.L22:
+ 239 01b6 9924      		clr r9
+ 240 01b8 0894      		sec
+ 241 01ba A11C      		adc r10,__zero_reg__
+ 242 01bc B11C      		adc r11,__zero_reg__
+ 243 01be 86E0      		ldi r24,lo8(6)
+ 244 01c0 14C0      		rjmp .L23
+ 245               	.L20:
+ 246 01c2 8430      		cpi r24,lo8(4)
+ 247 01c4 11F0      		breq .L25
+ 248 01c6 8831      		cpi r24,lo8(24)
+ 249 01c8 49F4      		brne .L24
+ 250               	.L25:
+ 251 01ca AE01      		movw r20,r28
+ 252 01cc 4F5F      		subi r20,lo8(-(1))
+ 253 01ce 5F4F      		sbci r21,hi8(-(1))
+ 254 01d0 C701      		movw r24,r14
+ 255 01d2 B601      		movw r22,r12
+ 256 01d4 0E94 0000 		call FlashPage
+ 257 01d8 86E0      		ldi r24,lo8(6)
+ 258 01da 14C0      		rjmp .L83
+ 259               	.L24:
+ 260 01dc 892D      		mov r24,r9
+ 261 01de 9394      		inc r9
+ 262 01e0 8B30      		cpi r24,lo8(11)
+ 263 01e2 10F0      		brlo .L27
+ 264 01e4 88E1      		ldi r24,lo8(24)
+ 265 01e6 0EC0      		rjmp .L83
+ 266               	.L27:
+ 267 01e8 85E1      		ldi r24,lo8(21)
+ 268               	.L23:
+ 269 01ea 0E94 0000 		call SendOctet
+ 270 01ee C49A      		sbi 56-0x20,4
+ 271 01f0 CE01      		movw r24,r28
+ 272 01f2 0196      		adiw r24,1
+ 273 01f4 800F      		add r24,r16
+ 274 01f6 911F      		adc r25,r17
+ 275 01f8 BC01      		movw r22,r24
+ 276 01fa 8A2D      		mov r24,r10
+ 277 01fc 0E94 0000 		call RecvPacket
+ 278 0200 C498      		cbi 56-0x20,4
+ 279 0202 C0CF      		rjmp .L17
+ 280               	.L83:
+ 281 0204 0E94 0000 		call SendOctet
+ 282 0208 88E0      		ldi r24,lo8(8)
+ 283 020a 81BD      		out 65-0x20,r24
+ 284               	.L28:
+ 285 020c FFCF      		rjmp .L28
+GAS LISTING C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s 			page 6
+
+
+ 286               	/* epilogue: frame size=256 */
+ 287               	/* epilogue: noreturn */
+ 288               	/* epilogue end (size=0) */
+ 289               	/* function main size 223 (219) */
+ 290               		.size	main, .-main
+ 291               		.type	FlashPage, @function
+ 292               	FlashPage:
+ 293               	/* prologue: frame size=0 */
+ 294 020e CF92      		push r12
+ 295 0210 DF92      		push r13
+ 296 0212 EF92      		push r14
+ 297 0214 FF92      		push r15
+ 298 0216 0F93      		push r16
+ 299 0218 1F93      		push r17
+ 300 021a CF93      		push r28
+ 301 021c DF93      		push r29
+ 302               	/* prologue end (size=8) */
+ 303 021e EC01      		movw r28,r24
+ 304 0220 DB01      		movw r26,r22
+ 305 0222 6A01      		movw r12,r20
+ 306               	.L85:
+ 307 0224 8091 6800 		lds r24,104
+ 308 0228 80FD      		sbrc r24,0
+ 309 022a FCCF      		rjmp .L85
+ 310               	.L89:
+ 311 022c E199      		sbic 60-0x20,1
+ 312 022e FECF      		rjmp .L89
+ 313 0230 83E0      		ldi r24,lo8(3)
+ 314               	/* #APP */
+ 315 0232 FD01      		movw r30, r26
+ 316 0234 C093 5B00 		sts  91, r28
+ 317 0238 8093 6800 		sts 104, r24
+ 318 023c E895      		spm
+ 319               		
+ 320               	/* #NOAPP */
+ 321 023e 8091 6800 		lds r24,104
+ 322 0242 86FF      		sbrs r24,6
+ 323 0244 0EC0      		rjmp .L134
+ 324               	.L138:
+ 325 0246 8091 6800 		lds r24,104
+ 326 024a 80FD      		sbrc r24,0
+ 327 024c FCCF      		rjmp .L138
+ 328               	.L99:
+ 329 024e E199      		sbic 60-0x20,1
+ 330 0250 FECF      		rjmp .L99
+ 331 0252 81E1      		ldi r24,lo8(17)
+ 332               	/* #APP */
+ 333 0254 8093 6800 		sts 104, r24
+ 334 0258 E895      		spm
+ 335               		
+ 336               	/* #NOAPP */
+ 337 025a 8091 6800 		lds r24,104
+ 338 025e 86FD      		sbrc r24,6
+ 339 0260 F2CF      		rjmp .L138
+ 340               	.L134:
+ 341 0262 AD01      		movw r20,r26
+ 342 0264 BE01      		movw r22,r28
+GAS LISTING C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s 			page 7
+
+
+ 343 0266 E12C      		mov r14,__zero_reg__
+ 344 0268 F1E0      		ldi r31,hi8(256)
+ 345 026a FF2E      		mov r15,r31
+ 346 026c 012D      		mov r16,__zero_reg__
+ 347 026e 112D      		mov r17,__zero_reg__
+ 348 0270 EA0E      		add r14,r26
+ 349 0272 FB1E      		adc r15,r27
+ 350 0274 0C1F      		adc r16,r28
+ 351 0276 1D1F      		adc r17,r29
+ 352 0278 AE15      		cp r26,r14
+ 353 027a BF05      		cpc r27,r15
+ 354 027c C007      		cpc r28,r16
+ 355 027e D107      		cpc r29,r17
+ 356 0280 20F5      		brsh .L115
+ 357               	.L139:
+ 358 0282 8091 6800 		lds r24,104
+ 359 0286 80FD      		sbrc r24,0
+ 360 0288 FCCF      		rjmp .L139
+ 361               	.L111:
+ 362 028a E199      		sbic 60-0x20,1
+ 363 028c FECF      		rjmp .L111
+ 364 028e 21E0      		ldi r18,lo8(1)
+ 365 0290 F601      		movw r30,r12
+ 366 0292 3081      		ld r19,Z
+ 367 0294 8181      		ldd r24,Z+1
+ 368 0296 9927      		clr r25
+ 369 0298 982F      		mov r25,r24
+ 370 029a 8827      		clr r24
+ 371 029c 830F      		add r24,r19
+ 372 029e 911D      		adc r25,__zero_reg__
+ 373               	/* #APP */
+ 374 02a0 0C01      		movw  r0, r24
+ 375 02a2 FA01      		movw r30, r20
+ 376 02a4 6093 5B00 		sts 91, r22
+ 377 02a8 2093 6800 		sts 104, r18
+ 378 02ac E895      		spm
+ 379 02ae 1124      		clr  r1
+ 380               		
+ 381               	/* #NOAPP */
+ 382 02b0 82E0      		ldi r24,lo8(2)
+ 383 02b2 90E0      		ldi r25,hi8(2)
+ 384 02b4 C80E      		add r12,r24
+ 385 02b6 D91E      		adc r13,r25
+ 386 02b8 4E5F      		subi r20,lo8(-(2))
+ 387 02ba 5F4F      		sbci r21,hi8(-(2))
+ 388 02bc 6F4F      		sbci r22,hlo8(-(2))
+ 389 02be 7F4F      		sbci r23,hhi8(-(2))
+ 390 02c0 4E15      		cp r20,r14
+ 391 02c2 5F05      		cpc r21,r15
+ 392 02c4 6007      		cpc r22,r16
+ 393 02c6 7107      		cpc r23,r17
+ 394 02c8 E0F2      		brlo .L139
+ 395               	.L115:
+ 396 02ca 8091 6800 		lds r24,104
+ 397 02ce 80FD      		sbrc r24,0
+ 398 02d0 FCCF      		rjmp .L115
+ 399               	.L119:
+GAS LISTING C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s 			page 8
+
+
+ 400 02d2 E199      		sbic 60-0x20,1
+ 401 02d4 FECF      		rjmp .L119
+ 402 02d6 85E0      		ldi r24,lo8(5)
+ 403               	/* #APP */
+ 404 02d8 FD01      		movw r30, r26
+ 405 02da C093 5B00 		sts 91, r28
+ 406 02de 8093 6800 		sts 104, r24
+ 407 02e2 E895      		spm
+ 408               		
+ 409               	/* #NOAPP */
+ 410 02e4 8091 6800 		lds r24,104
+ 411 02e8 86FF      		sbrs r24,6
+ 412 02ea 0EC0      		rjmp .L137
+ 413               	.L140:
+ 414 02ec 8091 6800 		lds r24,104
+ 415 02f0 80FD      		sbrc r24,0
+ 416 02f2 FCCF      		rjmp .L140
+ 417               	.L129:
+ 418 02f4 E199      		sbic 60-0x20,1
+ 419 02f6 FECF      		rjmp .L129
+ 420 02f8 81E1      		ldi r24,lo8(17)
+ 421               	/* #APP */
+ 422 02fa 8093 6800 		sts 104, r24
+ 423 02fe E895      		spm
+ 424               		
+ 425               	/* #NOAPP */
+ 426 0300 8091 6800 		lds r24,104
+ 427 0304 86FD      		sbrc r24,6
+ 428 0306 F2CF      		rjmp .L140
+ 429               	.L137:
+ 430               	/* epilogue: frame size=0 */
+ 431 0308 DF91      		pop r29
+ 432 030a CF91      		pop r28
+ 433 030c 1F91      		pop r17
+ 434 030e 0F91      		pop r16
+ 435 0310 FF90      		pop r15
+ 436 0312 EF90      		pop r14
+ 437 0314 DF90      		pop r13
+ 438 0316 CF90      		pop r12
+ 439 0318 0895      		ret
+ 440               	/* epilogue end (size=9) */
+ 441               	/* function FlashPage size 154 (137) */
+ 442               		.size	FlashPage, .-FlashPage
+ 443               		.type	SendOctet, @function
+ 444               	SendOctet:
+ 445               	/* prologue: frame size=0 */
+ 446               	/* prologue end (size=0) */
+ 447               	.L142:
+ 448 031a 5D9B      		sbis 43-0x20,5
+ 449 031c FECF      		rjmp .L142
+ 450 031e 8CB9      		out 44-0x20,r24
+ 451               	/* epilogue: frame size=0 */
+ 452 0320 0895      		ret
+ 453               	/* epilogue end (size=1) */
+ 454               	/* function SendOctet size 4 (3) */
+ 455               		.size	SendOctet, .-SendOctet
+ 456               		.type	RecvOctet, @function
+GAS LISTING C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s 			page 9
+
+
+ 457               	RecvOctet:
+ 458               	/* prologue: frame size=0 */
+ 459               	/* prologue end (size=0) */
+ 460 0322 81E0      		ldi r24,lo8(1)
+ 461 0324 90E0      		ldi r25,hi8(1)
+ 462 0326 9093 0000 		sts (intime)+1,r25
+ 463 032a 8093 0000 		sts intime,r24
+ 464 032e 5F99      		sbic 43-0x20,7
+ 465 0330 11C0      		rjmp .L152
+ 466               	.L150:
+ 467 0332 8091 0000 		lds r24,intime
+ 468 0336 9091 0000 		lds r25,(intime)+1
+ 469 033a 0196      		adiw r24,1
+ 470 033c 9093 0000 		sts (intime)+1,r25
+ 471 0340 8093 0000 		sts intime,r24
+ 472 0344 8091 0000 		lds r24,intime
+ 473 0348 9091 0000 		lds r25,(intime)+1
+ 474 034c 0097      		sbiw r24,0
+ 475 034e 21F0      		breq .L145
+ 476 0350 5F9B      		sbis 43-0x20,7
+ 477 0352 EFCF      		rjmp .L150
+ 478               	.L152:
+ 479 0354 8CB1      		in r24,44-0x20
+ 480 0356 9927      		clr r25
+ 481               	.L145:
+ 482 0358 0895      		ret
+ 483               	/* epilogue: frame size=0 */
+ 484               	/* epilogue: noreturn */
+ 485               	/* epilogue end (size=0) */
+ 486               	/* function RecvOctet size 28 (28) */
+ 487               		.size	RecvOctet, .-RecvOctet
+ 488               		.type	RecvPacket, @function
+ 489               	RecvPacket:
+ 490               	/* prologue: frame size=0 */
+ 491 035a EF92      		push r14
+ 492 035c FF92      		push r15
+ 493 035e 0F93      		push r16
+ 494 0360 1F93      		push r17
+ 495 0362 CF93      		push r28
+ 496               	/* prologue end (size=5) */
+ 497 0364 082F      		mov r16,r24
+ 498 0366 7B01      		movw r14,r22
+ 499               	.L154:
+ 500 0368 0E94 0000 		call RecvOctet
+ 501 036c 182F      		mov r17,r24
+ 502 036e 8130      		cpi r24,lo8(1)
+ 503 0370 59F0      		breq .L155
+ 504 0372 8091 0000 		lds r24,intime
+ 505 0376 9091 0000 		lds r25,(intime)+1
+ 506 037a 892B      		or r24,r25
+ 507 037c 71F1      		breq .L168
+ 508 037e 1430      		cpi r17,lo8(4)
+ 509 0380 61F1      		breq .L168
+ 510 0382 1831      		cpi r17,lo8(24)
+ 511 0384 89F7      		brne .L154
+ 512 0386 29C0      		rjmp .L168
+ 513               	.L155:
+GAS LISTING C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s 			page 10
+
+
+ 514 0388 0E94 0000 		call RecvOctet
+ 515 038c C82F      		mov r28,r24
+ 516 038e 0E94 0000 		call RecvOctet
+ 517 0392 8C0F      		add r24,r28
+ 518 0394 912D      		mov r25,__zero_reg__
+ 519 0396 911D      		adc r25,__zero_reg__
+ 520 0398 8F3F      		cpi r24,255
+ 521 039a 9105      		cpc r25,__zero_reg__
+ 522 039c 09F4      		brne .L161
+ 523 039e C013      		cpse r28,r16
+ 524               	.L161:
+ 525 03a0 1FEF      		ldi r17,lo8(-1)
+ 526               	.L160:
+ 527 03a2 C0E0      		ldi r28,lo8(0)
+ 528 03a4 0C2F      		mov r16,r28
+ 529               	.L167:
+ 530 03a6 0E94 0000 		call RecvOctet
+ 531 03aa F701      		movw r30,r14
+ 532 03ac 8193      		st Z+,r24
+ 533 03ae 7F01      		movw r14,r30
+ 534 03b0 C80F      		add r28,r24
+ 535 03b2 8091 0000 		lds r24,intime
+ 536 03b6 9091 0000 		lds r25,(intime)+1
+ 537 03ba 0097      		sbiw r24,0
+ 538 03bc 81F0      		breq .L153
+ 539 03be 0F5F      		subi r16,lo8(-(1))
+ 540 03c0 07FF      		sbrs r16,7
+ 541 03c2 F1CF      		rjmp .L167
+ 542 03c4 0E94 0000 		call RecvOctet
+ 543 03c8 C817      		cp r28,r24
+ 544 03ca 31F4      		brne .L169
+ 545 03cc 8091 0000 		lds r24,intime
+ 546 03d0 9091 0000 		lds r25,(intime)+1
+ 547 03d4 892B      		or r24,r25
+ 548 03d6 09F4      		brne .L168
+ 549               	.L169:
+ 550 03d8 1FEF      		ldi r17,lo8(-1)
+ 551               	.L168:
+ 552 03da 812F      		mov r24,r17
+ 553 03dc 9927      		clr r25
+ 554               	.L153:
+ 555               	/* epilogue: frame size=0 */
+ 556 03de CF91      		pop r28
+ 557 03e0 1F91      		pop r17
+ 558 03e2 0F91      		pop r16
+ 559 03e4 FF90      		pop r15
+ 560 03e6 EF90      		pop r14
+ 561 03e8 0895      		ret
+ 562               	/* epilogue end (size=6) */
+ 563               	/* function RecvPacket size 73 (62) */
+ 564               		.size	RecvPacket, .-RecvPacket
+ 565               		.comm marker,2,1
+ 566               		.comm intime,2,1
+ 567               	/* File "nboot.c": code  527 = 0x020f ( 491), prologues  17, epilogues  19 */
+GAS LISTING C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 nboot.c
+                            *ABS*:0000003f __SREG__
+                            *ABS*:0000003e __SP_H__
+                            *ABS*:0000003d __SP_L__
+                            *ABS*:00000000 __tmp_reg__
+                            *ABS*:00000001 __zero_reg__
+C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s:13     .text:00000000 start
+C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s:83     .text:00000056 main
+C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s:25     .text:00000006 version
+C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s:37     .text:0000000c crcadd
+                            *COM*:00000002 marker
+C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s:444    .text:0000031a SendOctet
+C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s:489    .text:0000035a RecvPacket
+C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s:292    .text:0000020e FlashPage
+C:\DOCUME~1\mike\LOCALS~1\Temp/ccOYaaaa.s:457    .text:00000322 RecvOctet
+                            *COM*:00000002 intime
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+__stack

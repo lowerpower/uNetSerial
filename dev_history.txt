@@ -1,0 +1,93 @@
+
+PPP engine - Goal is a small and fast PPP engine for embedded systems.
+
+Minimal features - PAP. (done)
+
+Next Min feature -	DNS servers (done)
+					Magic Number (zero number support)
+
+Would be nice	-	Server Support with dish out of DNS,IP and PAP auth.
+
+
+Nov 18, 2003
+------------
+Moved S-Regesters around, configurations moved to a base address of 0x20, added GPIO support,
+added configurable serial port speed for emulator.
+
+Nov 17 2003
+-----------
+Added the ability to accept reject of Magic numbers.
+
+Jun 14-17 2003
+--------------
+Lots of bug fixes for PPP, Magic number support based on PPP_ID and PAP negotiation.
+Much more that I forgot to log.
+
+
+Jun 13 2003
+-----------
+PPP connect, and TCP are working.  Found a problem with peer closing TCP 
+that has been fixed.  Command processor cleanup has begun.  Demo is close.
+Still need to fix TCP retry and clean up the memory allocation, but
+this shouldn't prohibit a demo.
+
+
+Jun 06 2003
+-----------
+Haven't logged much in this file, but added UDP, ICMP ech reply, and a good
+start on TCP.  Currently in the process of adding the IR command processor 
+for the demo app.  
+
+
+Oct 17 2002
+-----------
+PAP now works. Negotiation speed much better.  Error codes and reasonable
+aborts during raise_ppp() added.  More clean up.  Backup CD at this point.
+
+Oct 16 2002
+-----------
+Cleanup, changed ppp_task() to raise_ppp() makes more sense.
+
+
+Oct 15 2002
+-----------
+Worked on cleaning up the IPCP layer. Got response for IP address and DNS,
+need to reply with same for my side of the connection, getting close!
+
+Worked more, got a connection, with IP address and DNS server data through
+IPCP!  Need more testing and PAP.
+
+
+Oct 14 2002
+-----------
+Got the LCP layer up with the unix PPPD server, started working on IPCP layer.
+Need to cleanup the retry timers for all layers. I think I need to go back to
+co-mingiling the layer variables between modules.  Implmented Magic number of
+all zeros, PFC, and ACFC; for receive.  Magic number of all zeros on transmit.
+
+
+Oct 10 2002
+-----------
+Cleanup.
+
+
+July 17 2002
+------------
+Worked on ahdlc, goal is to make it self contained with no dependancies outside
+the module.
+
+Made the error counters optional.
+
+
+July 16 2002
+------------
+
+Started Development History.  Need to make small tight fast PPP engine.  Configurable
+from basic and small to features and larger.   Target will be AVR after PC develpment
+is done.  Based on some of my earlier work in 2000.
+
+
+
+
+
+(c) www.mycal.net 2000/2001/2002

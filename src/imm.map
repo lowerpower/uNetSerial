@@ -1,0 +1,1527 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodhi4.o)
+                              conio.o (__udivmodhi4)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o (exit)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+                              globals.o (__do_copy_data)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+                              globals.o (__do_clear_bss)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o)
+                              udpcmd.o (isalnum)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(cty_isfalse.o)
+                              c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o) (__ctype_isfalse)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalpha.o)
+                              c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o) (isalpha)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isdigit.o)
+                              c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o) (isdigit)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(toupper.o)
+                              udpcmd.o (toupper)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                              resolve.o (strcmp)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_rb.1C1D1E.o)
+                              globals.o (__eeprom_read_byte_1C1D1E)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_wb.1C1D1E.o)
+                              globals.o (__eeprom_write_byte_1C1D1E)
+
+Allocating common symbols
+Common symbol       size              file
+
+password            0x2               ppp.o
+tmpflag             0x1               ircmd.o
+TIMER_Second        0x1               time.o
+mm                  0x81              globals.o
+username            0x2               ppp.o
+UART1_RxBuffer      0x91              modem.o
+udp_len             0x2               udpcmd.o
+foundip             0x4               resolve.o
+ICMP_Callback       0x2               mip.o
+TIMER_Tick          0x2               time.o
+UART0_RxHead        0x1               console.o
+TIMER_HundredMS     0x2               time.o
+ahdlc_rx_crc        0x2               ahdlc.o
+udp_socket          0x8               mudp.o
+TCPSendTime         0x2               ircmd.o
+ahdlc_max_rx_buffer_size
+                    0x2               ahdlc.o
+UART0_RxBuffer      0x40              console.o
+TIMER_HunMS_Count   0x1               time.o
+ircmd_state         0x1               ircmd.o
+memory              0x2c8             memory.o
+snd_count           0x2               ircmd.o
+ahdlc_rx_count      0x2               ahdlc.o
+tcp_socket          0x38              mtcp.o
+done                0x1               ppp.o
+udp_active          0x1               udpcmd.o
+UART1_Ready         0x1               modem.o
+soc_num             0x1               ircmd.o
+UART0_RxSize        0x1               console.o
+TIMER_Counter       0x1               time.o
+UART1_RxHead        0x1               modem.o
+ppp_id              0x1               ppp.o
+ipid                0x2               mip.o
+sockets             0x2               ircmd.o
+dtrflag             0x1               ircmd.o
+active_soc          0x1               ircmd.o
+ahdlc_tx_crc        0x2               ahdlc.o
+snd_buff            0x80              ircmd.o
+udp_ip              0x4               udpcmd.o
+ahdlc_rx_buffer     0x180             ahdlc.o
+smbuff              0x10              imm.o
+UART1_RxSize        0x1               modem.o
+UART0_Ready         0x1               console.o
+ppp_rx_tobig_error  0x2               ppp.o
+UART0_RxTail        0x1               console.o
+current_buffer      0x1               ahdlc.o
+ahdlc_flags         0x1               ahdlc.o
+ircmd_buf           0x42              ircmd.o
+UART1_RxTail        0x1               modem.o
+free_list           0x2               memory.o
+udp_sp              0x2               udpcmd.o
+udp_ptr             0x2               udpcmd.o
+
+Discarded input sections
+
+ .stabstr       0x00000000        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+LOAD globals.o
+LOAD imm.o
+LOAD autobaud.o
+LOAD udpcmd.o
+LOAD ahdlc.o
+LOAD conio.o
+LOAD console.o
+LOAD ipcp.o
+LOAD ircmd.o
+LOAD lcp.o
+LOAD memory.o
+LOAD mip.o
+LOAD modem.o
+LOAD msg.o
+LOAD mtcp.o
+LOAD mudp.o
+LOAD pap.o
+LOAD ppp.o
+LOAD resolve.o
+LOAD sreg.o
+LOAD time.o
+LOAD utils.o
+LOAD c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libm.a
+LOAD c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a
+LOAD c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x48e8
+ *(.vectors)
+ .vectors       0x00000000       0x8c c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x0000008c       0x10 autobaud.o
+ .progmem.data  0x0000009c       0x86 msg.o
+                0x00000122                . = ALIGN (0x2)
+                0x00000122                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000122        0x0 linker stubs
+ *(.trampolines*)
+                0x00000122                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000122                __ctors_start = .
+ *(.ctors)
+                0x00000122                __ctors_end = .
+                0x00000122                __dtors_start = .
+ *(.dtors)
+                0x00000122                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000122        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+                0x00000122                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000122        0xc c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000012e       0x16 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+                0x0000012e                __do_copy_data
+ .init4         0x00000144       0x10 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+                0x00000144                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000154        0x8 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+ *(.init9)
+ *(.text)
+ .text          0x0000015c        0x4 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+                0x0000015c                __vector_22
+                0x0000015c                __vector_28
+                0x0000015c                __vector_1
+                0x0000015c                __vector_34
+                0x0000015c                __vector_24
+                0x0000015c                __vector_12
+                0x0000015c                __bad_interrupt
+                0x0000015c                __vector_6
+                0x0000015c                __vector_31
+                0x0000015c                __vector_3
+                0x0000015c                __vector_23
+                0x0000015c                __vector_25
+                0x0000015c                __vector_11
+                0x0000015c                __vector_13
+                0x0000015c                __vector_17
+                0x0000015c                __vector_19
+                0x0000015c                __vector_7
+                0x0000015c                __vector_27
+                0x0000015c                __vector_5
+                0x0000015c                __vector_33
+                0x0000015c                __vector_4
+                0x0000015c                __vector_9
+                0x0000015c                __vector_2
+                0x0000015c                __vector_21
+                0x0000015c                __vector_15
+                0x0000015c                __vector_29
+                0x0000015c                __vector_26
+                0x0000015c                __vector_10
+ .text          0x00000160       0xec globals.o
+                0x00000160                global_init
+ .text          0x0000024c       0xde imm.o
+                0x00000278                main
+                0x0000024c                setup_hw
+ .text          0x0000032a       0xf4 autobaud.o
+                0x0000033a                autobaud_rate
+                0x0000032a                autobaud_start
+                0x00000362                autobaud_value
+                0x000003cc                __vector_8
+                0x00000376                autobaud_setup
+                0x000003a0                __vector_14
+ .text          0x0000041e      0x35e udpcmd.o
+                0x000006d2                udp_socket_rx
+                0x0000041e                udpcmd
+ .text          0x0000077c      0x3e4 ahdlc.o
+                0x000007d8                crcadd
+                0x0000077c                ahdlc_init
+                0x000007bc                ahdlc_is_ready
+                0x00000870                ahdlc_tx
+                0x0000078e                ahdlc_rx_ready
+                0x00000820                ahdlc_tx_char
+                0x000007cc                ahdlc_down
+                0x00000954                ahdlc_rx
+                0x000007ae                ahdlc_autosync
+ .text          0x00000b60      0x488 conio.o
+                0x00000d1c                d2s
+                0x00000c32                s2ip
+                0x00000f5e                printIP
+                0x00000eda                printByte
+                0x00000ba8                s2X
+                0x00000e18                X2s
+                0x00000f3e                printShort
+                0x00000e72                Get_Byte
+                0x00000d50                s2p
+                0x00000b60                b2X
+                0x00000ef4                printDWord
+                0x00000ec0                printWord
+                0x00000d8e                _2d
+ .text          0x00000fe8      0x1ea console.o
+                0x00001140                CONSOLE_getch
+                0x0000113a                CONSOLE_putch
+                0x00001134                CONSOLE_init
+                0x000010f8                putch
+                0x000010b0                getch
+                0x000010a4                wait
+                0x0000106c                UART0_Init
+                0x00001192                CONSOLE_cputs
+                0x00001184                CONSOLE_pushch
+                0x000011b4                CONSOLE_puts
+                0x00000fe8                __vector_18
+                0x0000115e                CONSOLE_kbhit
+                0x0000104e                __vector_20
+ .text          0x000011d2      0x378 ipcp.o
+                0x000011d2                ipcp_init
+                0x0000132a                ipcp_rx
+                0x00001208                ipcp_task
+ .text          0x0000154a      0xa66 ircmd.o
+                0x000016f4                EscapeTime
+                0x0000182c                TCPSend
+                0x00001e44                irCommands
+                0x00001782                EscapeSequence
+                0x00001d6e                irCommand
+                0x0000172e                EscapeAction
+                0x0000197e                pppConnect
+                0x0000176c                EscapeReset
+                0x00001644                tcp_socket_rx
+                0x000015e0                Check_Reset_EEPROM
+                0x00001686                passthrough
+                0x000015d2                modem_toggle_dtr
+                0x000017e2                TCPState
+                0x0000154a                SocketSelect
+                0x000018b4                Check_Carrier
+                0x00001940                icmp_echo_rx
+                0x00001564                Modem_Signals
+                0x0000190e                Get_IP
+                0x0000169a                WriteTCPChar
+                0x000019c0                irCommandProcessor
+ .text          0x00001fb0      0x350 lcp.o
+                0x00001fb0                lcp_task
+                0x00002076                lcp_rx
+                0x00002064                lcp_init
+ .text          0x00002300       0x8c memory.o
+                0x00002348                MEM_init
+                0x00002326                MEM_FreeBlock
+                0x00002300                MEM_GetBlock
+ .text          0x0000238c      0x2cc mip.o
+                0x000023e0                ICMP_Echo_Terminate
+                0x0000247e                ICMP_Send_Ping
+                0x000023ea                icmp_upcall
+                0x000025ca                ip_upcall
+                0x000023d6                ICMP_Echo_Callback
+                0x00002464                ip_send
+                0x0000238c                Checksum_16
+ .text          0x00002658      0x204 modem.o
+                0x000026bc                __vector_32
+                0x0000270c                MODEM_init
+                0x00002726                MODEM_getch
+                0x0000281c                poll_serial
+                0x00002658                __vector_30
+                0x00002792                MODEM_pushch
+                0x000027a0                MODEM_kbhit
+                0x000027fe                MODEM_puts
+                0x000027c6                MODEM_putch
+                0x000026da                UART1_Init
+ .text          0x0000285c       0xe2 msg.o
+                0x0000285c                displayMessage
+ .text          0x0000293e      0xd44 mtcp.o
+                0x00002976                tcp_status
+                0x00002e90                tcp_upcall
+                0x00003502                tcp_close
+                0x000029e2                tcp_sendit
+                0x00002994                tcp_sport
+                0x00002958                tcp_listen
+                0x00002dda                tcp_send
+                0x000035a8                tcp_open
+                0x0000293e                tcp_init
+                0x000029b2                tcp_clean_socket
+                0x00002e1a                tcp_process
+ .text          0x00003682      0x326 mudp.o
+                0x00003716                udp_upcall
+                0x000036fc                udp_close
+                0x000036dc                udp_port
+                0x000037f6                udp_tx
+                0x00003694                udp_bind
+                0x00003682                udp_init
+ .text          0x000039a8      0x10e pap.o
+                0x00003a6c                pap_rx
+                0x000039a8                pap_init
+                0x000039ae                pap_task
+ .text          0x00003ab6      0x51e ppp.o
+                0x00003eca                ppp_down
+                0x00003e32                ppp_shut_down
+                0x00003b7a                scan_packet
+                0x00003f98                ppp_auto_enable
+                0x00003ed8                ppp_passive
+                0x00003f1c                init_ppp
+                0x00003d52                ppp_task
+                0x00003f52                raise_ppp
+                0x00003b0c                ppp_reject_protocol
+                0x00003ab6                dump_ppp_packet
+                0x00003c8a                ppp_upcall
+ .text          0x00003fd4      0x420 resolve.o
+                0x00003fd4                gobble_name
+                0x0000400e                resolve_callback
+                0x000040c6                resolve_name
+ .text          0x000043f4      0x2ea sreg.o
+                0x000043f4                sRegister
+ .text          0x000046de      0x130 time.o
+                0x0000476a                TIMER_Init
+                0x00004778                TIMER_Get_Tick
+                0x000047dc                timer_timeout
+                0x00004794                timer_set
+                0x000047b6                TIMER_Wait_Tick
+                0x0000475c                timer_expire
+                0x0000478c                TIMER_Get_Second
+                0x000046de                __vector_16
+                0x00004782                TIMER_Get_TCP_HundredMS
+ .text          0x0000480e       0x32 utils.o
+                0x0000480e                bytecopy
+ .text          0x00004840        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00004840        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+ .text          0x00004840        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00004840        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00004840        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o)
+ .text          0x00004840        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(cty_isfalse.o)
+ .text          0x00004840        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalpha.o)
+ .text          0x00004840        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isdigit.o)
+ .text          0x00004840        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(toupper.o)
+ .text          0x00004840       0x12 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                0x00004840                strcmp
+ .text          0x00004852        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_rb.1C1D1E.o)
+ .text          0x00004852        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_wb.1C1D1E.o)
+                0x00004852                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00004852       0x28 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodhi4.o)
+                0x00004852                __udivmodhi4
+ .text.libgcc   0x0000487a        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000487a        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000487a        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+ .text.ctype    0x0000487a       0x12 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o)
+                0x0000487a                isalnum
+ .text.ctype    0x0000488c        0x6 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(cty_isfalse.o)
+                0x00004890                __ctype_istrue
+                0x0000488c                __ctype_isfalse
+ .text.ctype    0x00004892       0x14 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalpha.o)
+                0x00004898                islower
+                0x00004892                isupper
+                0x00004896                isalpha
+ .text.ctype    0x000048a6        0xc c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isdigit.o)
+                0x000048a6                isdigit
+ .text.ctype    0x000048b2        0xc c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(toupper.o)
+                0x000048b2                toupper
+ .text.eeprom   0x000048be       0x10 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_rb.1C1D1E.o)
+                0x000048be                __eeprom_read_byte_1C1D1E
+ .text.eeprom   0x000048ce       0x18 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_wb.1C1D1E.o)
+                0x000048ce                __eeprom_write_byte_1C1D1E
+                0x000048e6                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000048e6        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+                0x000048e6                exit
+                0x000048e6                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000048e6        0x2 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000048e8                _etext = .
+
+.data           0x00800100       0xbe load address 0x000048e8
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+ .data          0x00800100        0x0 globals.o
+ .data          0x00800100       0x9c imm.o
+                0x00800196                boot_version
+                0x0080019a                bootloader
+                0x00800198                crc_boot
+ .data          0x0080019c        0x0 autobaud.o
+ .data          0x0080019c        0x3 udpcmd.o
+ .data          0x0080019f        0x0 ahdlc.o
+ .data          0x0080019f        0x0 conio.o
+ .data          0x0080019f        0x0 console.o
+ .data          0x0080019f        0x4 ipcp.o
+                0x0080019f                ipcplist
+ .data          0x008001a3        0xe ircmd.o
+ .data          0x008001b1        0x7 lcp.o
+                0x008001b1                lcplist
+ .data          0x008001b8        0x0 memory.o
+ .data          0x008001b8        0x0 mip.o
+ .data          0x008001b8        0x0 modem.o
+ .data          0x008001b8        0x3 msg.o
+ .data          0x008001bb        0x0 mtcp.o
+ .data          0x008001bb        0x0 mudp.o
+ .data          0x008001bb        0x0 pap.o
+ .data          0x008001bb        0x3 ppp.o
+ .data          0x008001be        0x0 resolve.o
+ .data          0x008001be        0x0 sreg.o
+ .data          0x008001be        0x0 time.o
+ .data          0x008001be        0x0 utils.o
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o)
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(cty_isfalse.o)
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalpha.o)
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isdigit.o)
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(toupper.o)
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_rb.1C1D1E.o)
+ .data          0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_wb.1C1D1E.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008001be                . = ALIGN (0x2)
+                0x008001be                _edata = .
+                0x008001be                PROVIDE (__data_end, .)
+
+.bss            0x008001be      0x72b
+                0x008001be                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008001be        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+ .bss           0x008001be        0x0 globals.o
+ .bss           0x008001be        0x0 imm.o
+ .bss           0x008001be        0x3 autobaud.o
+ .bss           0x008001c1        0x0 udpcmd.o
+ .bss           0x008001c1        0x0 ahdlc.o
+ .bss           0x008001c1        0x0 conio.o
+ .bss           0x008001c1        0x2 console.o
+ .bss           0x008001c3        0x0 ipcp.o
+ .bss           0x008001c3        0xb ircmd.o
+ .bss           0x008001ce        0x0 lcp.o
+ .bss           0x008001ce        0x1 memory.o
+ .bss           0x008001cf        0x0 mip.o
+ .bss           0x008001cf        0x2 modem.o
+ .bss           0x008001d1        0x0 msg.o
+ .bss           0x008001d1        0x0 mtcp.o
+ .bss           0x008001d1        0x0 mudp.o
+ .bss           0x008001d1        0x0 pap.o
+ .bss           0x008001d1        0x4 ppp.o
+                0x008001d1                ppp_rx_frame_count
+ .bss           0x008001d5       0x25 resolve.o
+ .bss           0x008001fa        0x0 sreg.o
+ .bss           0x008001fa        0x2 time.o
+ .bss           0x008001fc        0x0 utils.o
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o)
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(cty_isfalse.o)
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalpha.o)
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isdigit.o)
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(toupper.o)
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_rb.1C1D1E.o)
+ .bss           0x008001fc        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_wb.1C1D1E.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008001fc       0x81 globals.o
+                0x008001fc                mm
+ COMMON         0x0080027d       0x10 imm.o
+                0x0080027d                smbuff
+ COMMON         0x0080028d        0xb udpcmd.o
+                0x0080028d                udp_len
+                0x0080028f                udp_active
+                0x00800290                udp_ip
+                0x00800294                udp_sp
+                0x00800296                udp_ptr
+ COMMON         0x00800298      0x18a ahdlc.o
+                0x00800298                ahdlc_rx_crc
+                0x0080029a                ahdlc_max_rx_buffer_size
+                0x0080029c                ahdlc_rx_count
+                0x0080029e                ahdlc_tx_crc
+                0x008002a0                ahdlc_rx_buffer
+                0x00800420                current_buffer
+                0x00800421                ahdlc_flags
+ COMMON         0x00800422       0x44 console.o
+                0x00800422                UART0_RxHead
+                0x00800423                UART0_RxBuffer
+                0x00800463                UART0_RxSize
+                0x00800464                UART0_Ready
+                0x00800465                UART0_RxTail
+ COMMON         0x00800466       0xcd ircmd.o
+                0x00800466                tmpflag
+                0x00800467                TCPSendTime
+                0x00800469                ircmd_state
+                0x0080046a                snd_count
+                0x0080046c                soc_num
+                0x0080046d                sockets
+                0x0080046f                dtrflag
+                0x00800470                active_soc
+                0x00800471                snd_buff
+                0x008004f1                ircmd_buf
+ COMMON         0x00800533      0x2ca memory.o
+                0x00800533                memory
+                0x008007fb                free_list
+ COMMON         0x008007fd        0x4 mip.o
+                0x008007fd                ICMP_Callback
+                0x008007ff                ipid
+ COMMON         0x00800801       0x95 modem.o
+                0x00800801                UART1_RxBuffer
+                0x00800892                UART1_Ready
+                0x00800893                UART1_RxHead
+                0x00800894                UART1_RxSize
+                0x00800895                UART1_RxTail
+ COMMON         0x00800896       0x38 mtcp.o
+                0x00800896                tcp_socket
+ COMMON         0x008008ce        0x8 mudp.o
+                0x008008ce                udp_socket
+ COMMON         0x008008d6        0x8 ppp.o
+                0x008008d6                password
+                0x008008d8                username
+                0x008008da                done
+                0x008008db                ppp_id
+                0x008008dc                ppp_rx_tobig_error
+ COMMON         0x008008de        0x4 resolve.o
+                0x008008de                foundip
+ COMMON         0x008008e2        0x7 time.o
+                0x008008e2                TIMER_Second
+                0x008008e3                TIMER_Tick
+                0x008008e5                TIMER_HundredMS
+                0x008008e7                TIMER_HunMS_Count
+                0x008008e8                TIMER_Counter
+                0x008008e9                PROVIDE (__bss_end, .)
+                0x000048e8                __data_load_start = LOADADDR (.data)
+                0x000049a6                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008008e9        0x0
+                0x008008e9                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008008e9                PROVIDE (__noinit_end, .)
+                0x008008e9                _end = .
+                0x008008e9                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.stab           0x00000000      0x378
+ *(.stab)
+ .stab          0x00000000      0x378 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+
+.stabstr        0x00000000       0x71
+ *(.stabstr)
+ .stabstr       0x00000000       0x71 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x2c0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 globals.o
+ .debug_aranges
+                0x00000020       0x20 imm.o
+ .debug_aranges
+                0x00000040       0x20 autobaud.o
+ .debug_aranges
+                0x00000060       0x20 udpcmd.o
+ .debug_aranges
+                0x00000080       0x20 ahdlc.o
+ .debug_aranges
+                0x000000a0       0x20 conio.o
+ .debug_aranges
+                0x000000c0       0x20 console.o
+ .debug_aranges
+                0x000000e0       0x20 ipcp.o
+ .debug_aranges
+                0x00000100       0x20 ircmd.o
+ .debug_aranges
+                0x00000120       0x20 lcp.o
+ .debug_aranges
+                0x00000140       0x20 memory.o
+ .debug_aranges
+                0x00000160       0x20 mip.o
+ .debug_aranges
+                0x00000180       0x20 modem.o
+ .debug_aranges
+                0x000001a0       0x20 msg.o
+ .debug_aranges
+                0x000001c0       0x20 mtcp.o
+ .debug_aranges
+                0x000001e0       0x20 mudp.o
+ .debug_aranges
+                0x00000200       0x20 pap.o
+ .debug_aranges
+                0x00000220       0x20 ppp.o
+ .debug_aranges
+                0x00000240       0x20 resolve.o
+ .debug_aranges
+                0x00000260       0x20 sreg.o
+ .debug_aranges
+                0x00000280       0x20 time.o
+ .debug_aranges
+                0x000002a0       0x20 utils.o
+
+.debug_pubnames
+                0x00000000      0xd44
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x29 globals.o
+ .debug_pubnames
+                0x00000029       0x60 imm.o
+ .debug_pubnames
+                0x00000089       0x7c autobaud.o
+ .debug_pubnames
+                0x00000105       0x6c udpcmd.o
+ .debug_pubnames
+                0x00000171      0x129 ahdlc.o
+ .debug_pubnames
+                0x0000029a       0x9e conio.o
+ .debug_pubnames
+                0x00000338      0x131 console.o
+ .debug_pubnames
+                0x00000469       0x47 ipcp.o
+ .debug_pubnames
+                0x000004b0      0x1e9 ircmd.o
+ .debug_pubnames
+                0x00000699       0x43 lcp.o
+ .debug_pubnames
+                0x000006dc       0x5b memory.o
+ .debug_pubnames
+                0x00000737       0xa9 mip.o
+ .debug_pubnames
+                0x000007e0      0x106 modem.o
+ .debug_pubnames
+                0x000008e6       0x25 msg.o
+ .debug_pubnames
+                0x0000090b       0xc5 mtcp.o
+ .debug_pubnames
+                0x000009d0       0x70 mudp.o
+ .debug_pubnames
+                0x00000a40       0x37 pap.o
+ .debug_pubnames
+                0x00000a77      0x124 ppp.o
+ .debug_pubnames
+                0x00000b9b       0x54 resolve.o
+ .debug_pubnames
+                0x00000bef       0x20 sreg.o
+ .debug_pubnames
+                0x00000c0f      0x116 time.o
+ .debug_pubnames
+                0x00000d25       0x1f utils.o
+
+.debug_info     0x00000000     0x804f
+ *(.debug_info)
+ .debug_info    0x00000000      0x4c6 globals.o
+ .debug_info    0x000004c6      0x430 imm.o
+ .debug_info    0x000008f6      0x24a autobaud.o
+ .debug_info    0x00000b40      0x668 udpcmd.o
+ .debug_info    0x000011a8      0x623 ahdlc.o
+ .debug_info    0x000017cb      0x4f5 conio.o
+ .debug_info    0x00001cc0      0x638 console.o
+ .debug_info    0x000022f8      0x4ce ipcp.o
+ .debug_info    0x000027c6      0xc6c ircmd.o
+ .debug_info    0x00003432      0x504 lcp.o
+ .debug_info    0x00003936      0x1ff memory.o
+ .debug_info    0x00003b35      0x776 mip.o
+ .debug_info    0x000042ab      0x630 modem.o
+ .debug_info    0x000048db      0x5e6 msg.o
+ .debug_info    0x00004ec1      0xb73 mtcp.o
+ .debug_info    0x00005a34      0x78f mudp.o
+ .debug_info    0x000061c3      0x4b7 pap.o
+ .debug_info    0x0000667a      0x848 ppp.o
+ .debug_info    0x00006ec2      0x6dc resolve.o
+ .debug_info    0x0000759e      0x4bc sreg.o
+ .debug_info    0x00007a5a      0x52d time.o
+ .debug_info    0x00007f87       0xc8 utils.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000     0x22bc
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x17e globals.o
+ .debug_abbrev  0x0000017e      0x129 imm.o
+ .debug_abbrev  0x000002a7       0xea autobaud.o
+ .debug_abbrev  0x00000391      0x15c udpcmd.o
+ .debug_abbrev  0x000004ed      0x200 ahdlc.o
+ .debug_abbrev  0x000006ed      0x193 conio.o
+ .debug_abbrev  0x00000880      0x1ee console.o
+ .debug_abbrev  0x00000a6e      0x1a4 ipcp.o
+ .debug_abbrev  0x00000c12      0x316 ircmd.o
+ .debug_abbrev  0x00000f28      0x1b1 lcp.o
+ .debug_abbrev  0x000010d9      0x107 memory.o
+ .debug_abbrev  0x000011e0      0x19a mip.o
+ .debug_abbrev  0x0000137a      0x263 modem.o
+ .debug_abbrev  0x000015dd      0x10d msg.o
+ .debug_abbrev  0x000016ea      0x228 mtcp.o
+ .debug_abbrev  0x00001912      0x1b0 mudp.o
+ .debug_abbrev  0x00001ac2      0x142 pap.o
+ .debug_abbrev  0x00001c04      0x1dd ppp.o
+ .debug_abbrev  0x00001de1      0x18f resolve.o
+ .debug_abbrev  0x00001f70      0x133 sreg.o
+ .debug_abbrev  0x000020a3      0x19e time.o
+ .debug_abbrev  0x00002241       0x7b utils.o
+
+.debug_line     0x00000000     0x516d
+ *(.debug_line)
+ .debug_line    0x00000000      0x251 globals.o
+ .debug_line    0x00000251      0x276 imm.o
+ .debug_line    0x000004c7      0x24e autobaud.o
+ .debug_line    0x00000715      0x34b udpcmd.o
+ .debug_line    0x00000a60      0x413 ahdlc.o
+ .debug_line    0x00000e73      0x457 conio.o
+ .debug_line    0x000012ca      0x342 console.o
+ .debug_line    0x0000160c      0x42e ipcp.o
+ .debug_line    0x00001a3a      0xb44 ircmd.o
+ .debug_line    0x0000257e      0x3bd lcp.o
+ .debug_line    0x0000293b      0x1a8 memory.o
+ .debug_line    0x00002ae3      0x350 mip.o
+ .debug_line    0x00002e33      0x324 modem.o
+ .debug_line    0x00003157      0x1f9 msg.o
+ .debug_line    0x00003350      0x83d mtcp.o
+ .debug_line    0x00003b8d      0x31c mudp.o
+ .debug_line    0x00003ea9      0x218 pap.o
+ .debug_line    0x000040c1      0x5ce ppp.o
+ .debug_line    0x0000468f      0x435 resolve.o
+ .debug_line    0x00004ac4      0x39e sreg.o
+ .debug_line    0x00004e62      0x271 time.o
+ .debug_line    0x000050d3       0x9a utils.o
+
+.debug_frame    0x00000000      0xa00
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x20 globals.o
+ .debug_frame   0x00000020       0x30 imm.o
+ .debug_frame   0x00000050       0x70 autobaud.o
+ .debug_frame   0x000000c0       0x30 udpcmd.o
+ .debug_frame   0x000000f0       0xa0 ahdlc.o
+ .debug_frame   0x00000190       0xe0 conio.o
+ .debug_frame   0x00000270       0xe0 console.o
+ .debug_frame   0x00000350       0x40 ipcp.o
+ .debug_frame   0x00000390      0x150 ircmd.o
+ .debug_frame   0x000004e0       0x40 lcp.o
+ .debug_frame   0x00000520       0x40 memory.o
+ .debug_frame   0x00000560       0x80 mip.o
+ .debug_frame   0x000005e0       0xb0 modem.o
+ .debug_frame   0x00000690       0x20 msg.o
+ .debug_frame   0x000006b0       0xc0 mtcp.o
+ .debug_frame   0x00000770       0x70 mudp.o
+ .debug_frame   0x000007e0       0x40 pap.o
+ .debug_frame   0x00000820       0xc0 ppp.o
+ .debug_frame   0x000008e0       0x40 resolve.o
+ .debug_frame   0x00000920       0x20 sreg.o
+ .debug_frame   0x00000940       0xa0 time.o
+ .debug_frame   0x000009e0       0x20 utils.o
+
+.debug_str      0x00000000      0xffb
+ *(.debug_str)
+ .debug_str     0x00000000      0x2bf globals.o
+                                0x336 (size before relaxing)
+ .debug_str     0x000002bf       0x3c imm.o
+                                0x31e (size before relaxing)
+ .debug_str     0x000002fb       0x88 autobaud.o
+                                0x19a (size before relaxing)
+ .debug_str     0x00000383       0xd8 udpcmd.o
+                                0x3d7 (size before relaxing)
+ .debug_str     0x0000045b      0x10a ahdlc.o
+                                0x3fe (size before relaxing)
+ .debug_str     0x00000565       0x69 conio.o
+                                0x1c5 (size before relaxing)
+ .debug_str     0x000005ce       0xdf console.o
+                                0x3f3 (size before relaxing)
+ .debug_str     0x000006ad       0x4b ipcp.o
+                                0x33a (size before relaxing)
+ .debug_str     0x000006f8      0x1cd ircmd.o
+                                0x5b8 (size before relaxing)
+ .debug_str     0x000008c5       0x3c lcp.o
+                                0x347 (size before relaxing)
+ .debug_str     0x00000901       0x49 memory.o
+                                0x177 (size before relaxing)
+ .debug_str     0x0000094a       0x8c mip.o
+                                0x3ff (size before relaxing)
+ .debug_str     0x000009d6       0xc6 modem.o
+                                0x3d1 (size before relaxing)
+ .debug_str     0x00000a9c       0xc2 msg.o
+                                0x3a6 (size before relaxing)
+ .debug_str     0x00000b5e      0x153 mtcp.o
+                                0x4ea (size before relaxing)
+ .debug_str     0x00000cb1       0x66 mudp.o
+                                0x403 (size before relaxing)
+ .debug_str     0x00000d17       0x3c pap.o
+                                0x34e (size before relaxing)
+ .debug_str     0x00000d53       0xf3 ppp.o
+                                0x466 (size before relaxing)
+ .debug_str     0x00000e46       0x87 resolve.o
+                                0x3fe (size before relaxing)
+ .debug_str     0x00000ecd       0x11 sreg.o
+                                0x342 (size before relaxing)
+ .debug_str     0x00000ede      0x100 time.o
+                                0x3dd (size before relaxing)
+ .debug_str     0x00000fde       0x1d utils.o
+                                 0xb7 (size before relaxing)
+
+.debug_loc      0x00000000     0x35a6
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x121 globals.o
+ .debug_loc     0x00000121       0x28 imm.o
+ .debug_loc     0x00000149      0x1f0 udpcmd.o
+ .debug_loc     0x00000339      0x207 ahdlc.o
+ .debug_loc     0x00000540      0x4d8 conio.o
+ .debug_loc     0x00000a18      0x11d console.o
+ .debug_loc     0x00000b35      0x3a8 ipcp.o
+ .debug_loc     0x00000edd      0x68c ircmd.o
+ .debug_loc     0x00001569      0x35c lcp.o
+ .debug_loc     0x000018c5       0x28 memory.o
+ .debug_loc     0x000018ed      0x32e mip.o
+ .debug_loc     0x00001c1b      0x127 modem.o
+ .debug_loc     0x00001d42       0xc3 msg.o
+ .debug_loc     0x00001e05      0x598 mtcp.o
+ .debug_loc     0x0000239d      0x1ec mudp.o
+ .debug_loc     0x00002589      0x1d0 pap.o
+ .debug_loc     0x00002759      0x58a ppp.o
+ .debug_loc     0x00002ce3      0x53f resolve.o
+ .debug_loc     0x00003222      0x2ec sreg.o
+ .debug_loc     0x0000350e       0x28 time.o
+ .debug_loc     0x00003536       0x70 utils.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(imm.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+CONSOLE_cputs                                     console.o
+                                                  msg.o
+CONSOLE_getch                                     console.o
+                                                  ircmd.o
+                                                  udpcmd.o
+CONSOLE_init                                      console.o
+                                                  imm.o
+CONSOLE_kbhit                                     console.o
+                                                  ircmd.o
+                                                  udpcmd.o
+CONSOLE_pushch                                    console.o
+                                                  ircmd.o
+CONSOLE_putch                                     console.o
+                                                  sreg.o
+                                                  ppp.o
+                                                  modem.o
+                                                  ircmd.o
+                                                  conio.o
+                                                  udpcmd.o
+CONSOLE_puts                                      console.o
+                                                  ppp.o
+                                                  msg.o
+                                                  ircmd.o
+                                                  conio.o
+                                                  udpcmd.o
+                                                  imm.o
+Check_Carrier                                     ircmd.o
+Check_Reset_EEPROM                                ircmd.o
+Checksum_16                                       mip.o
+                                                  mudp.o
+                                                  mtcp.o
+EscapeAction                                      ircmd.o
+EscapeReset                                       ircmd.o
+EscapeSequence                                    ircmd.o
+EscapeTime                                        ircmd.o
+Get_Byte                                          conio.o
+                                                  sreg.o
+                                                  ircmd.o
+Get_IP                                            ircmd.o
+                                                  udpcmd.o
+ICMP_Callback                                     mip.o
+ICMP_Echo_Callback                                mip.o
+                                                  ircmd.o
+ICMP_Echo_Terminate                               mip.o
+                                                  ircmd.o
+ICMP_Send_Ping                                    mip.o
+                                                  ircmd.o
+MEM_FreeBlock                                     memory.o
+                                                  resolve.o
+                                                  ppp.o
+                                                  mudp.o
+                                                  mtcp.o
+                                                  mip.o
+                                                  udpcmd.o
+MEM_GetBlock                                      memory.o
+                                                  resolve.o
+                                                  ppp.o
+                                                  mudp.o
+                                                  mtcp.o
+                                                  mip.o
+                                                  udpcmd.o
+MEM_init                                          memory.o
+                                                  ppp.o
+                                                  imm.o
+MODEM_getch                                       modem.o
+                                                  ircmd.o
+MODEM_init                                        modem.o
+                                                  sreg.o
+                                                  imm.o
+MODEM_kbhit                                       modem.o
+                                                  ircmd.o
+MODEM_pushch                                      modem.o
+MODEM_putch                                       modem.o
+                                                  ircmd.o
+                                                  ahdlc.o
+MODEM_puts                                        modem.o
+Modem_Signals                                     ircmd.o
+SocketSelect                                      ircmd.o
+TCPSend                                           ircmd.o
+TCPSendTime                                       ircmd.o
+                                                  udpcmd.o
+TCPState                                          ircmd.o
+TIMER_Counter                                     time.o
+TIMER_Get_Second                                  time.o
+                                                  resolve.o
+                                                  ppp.o
+                                                  mtcp.o
+                                                  ircmd.o
+TIMER_Get_TCP_HundredMS                           time.o
+                                                  mtcp.o
+TIMER_Get_Tick                                    time.o
+                                                  ircmd.o
+                                                  udpcmd.o
+TIMER_HunMS_Count                                 time.o
+TIMER_HundredMS                                   time.o
+TIMER_Init                                        time.o
+                                                  imm.o
+TIMER_Second                                      time.o
+TIMER_Tick                                        time.o
+TIMER_Wait_Tick                                   time.o
+                                                  lcp.o
+                                                  ircmd.o
+                                                  ipcp.o
+                                                  imm.o
+UART0_Init                                        console.o
+UART0_Ready                                       console.o
+UART0_RxBuffer                                    console.o
+UART0_RxHead                                      console.o
+UART0_RxSize                                      console.o
+UART0_RxTail                                      console.o
+UART1_Init                                        modem.o
+UART1_Ready                                       modem.o
+UART1_RxBuffer                                    modem.o
+UART1_RxHead                                      modem.o
+UART1_RxSize                                      modem.o
+UART1_RxTail                                      modem.o
+WriteTCPChar                                      ircmd.o
+X2s                                               conio.o
+_2d                                               conio.o
+                                                  msg.o
+__bad_interrupt                                   c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__bss_end                                         c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+__ctype_isfalse                                   c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(cty_isfalse.o)
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isdigit.o)
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalpha.o)
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o)
+__ctype_istrue                                    c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(cty_isfalse.o)
+__data_end                                        c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+__data_start                                      c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+__do_clear_bss                                    c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+                                                  utils.o
+                                                  time.o
+                                                  sreg.o
+                                                  resolve.o
+                                                  ppp.o
+                                                  pap.o
+                                                  mudp.o
+                                                  mtcp.o
+                                                  msg.o
+                                                  modem.o
+                                                  mip.o
+                                                  memory.o
+                                                  lcp.o
+                                                  ircmd.o
+                                                  ipcp.o
+                                                  console.o
+                                                  conio.o
+                                                  ahdlc.o
+                                                  udpcmd.o
+                                                  autobaud.o
+                                                  imm.o
+                                                  globals.o
+__do_copy_data                                    c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+                                                  utils.o
+                                                  time.o
+                                                  sreg.o
+                                                  resolve.o
+                                                  ppp.o
+                                                  pap.o
+                                                  mudp.o
+                                                  mtcp.o
+                                                  msg.o
+                                                  modem.o
+                                                  mip.o
+                                                  memory.o
+                                                  lcp.o
+                                                  ircmd.o
+                                                  ipcp.o
+                                                  console.o
+                                                  conio.o
+                                                  ahdlc.o
+                                                  udpcmd.o
+                                                  autobaud.o
+                                                  imm.o
+                                                  globals.o
+__eeprom_read_byte_1C1D1E                         c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_rb.1C1D1E.o)
+                                                  ircmd.o
+                                                  globals.o
+__eeprom_write_byte_1C1D1E                        c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(ee_wb.1C1D1E.o)
+                                                  ircmd.o
+                                                  globals.o
+__heap_end                                        c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__init                                            c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__stack                                           c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__udivmodhi4                                      c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodhi4.o)
+                                                  conio.o
+__vector_1                                        c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_10                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_11                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_12                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_13                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_14                                       autobaud.o
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_15                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_16                                       time.o
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_17                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_18                                       console.o
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_19                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_2                                        c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_20                                       console.o
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_21                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_22                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_23                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_24                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_25                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_26                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_27                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_28                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_29                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_3                                        c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_30                                       modem.o
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_31                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_32                                       modem.o
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_33                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_34                                       c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_4                                        c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_5                                        c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_6                                        c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_7                                        c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_8                                        autobaud.o
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_9                                        c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vector_default                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+__vectors                                         c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+_exit                                             c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+active_soc                                        ircmd.o
+ahdlc_autosync                                    ahdlc.o
+                                                  ppp.o
+ahdlc_down                                        ahdlc.o
+                                                  ppp.o
+ahdlc_flags                                       ahdlc.o
+ahdlc_init                                        ahdlc.o
+                                                  ppp.o
+ahdlc_is_ready                                    ahdlc.o
+                                                  ppp.o
+ahdlc_max_rx_buffer_size                          ahdlc.o
+ahdlc_rx                                          ahdlc.o
+                                                  modem.o
+ahdlc_rx_buffer                                   ahdlc.o
+ahdlc_rx_count                                    ahdlc.o
+ahdlc_rx_crc                                      ahdlc.o
+ahdlc_rx_ready                                    ahdlc.o
+                                                  ppp.o
+ahdlc_tx                                          ahdlc.o
+                                                  ppp.o
+                                                  pap.o
+                                                  mip.o
+                                                  lcp.o
+                                                  ipcp.o
+ahdlc_tx_char                                     ahdlc.o
+ahdlc_tx_crc                                      ahdlc.o
+autobaud_rate                                     autobaud.o
+autobaud_setup                                    autobaud.o
+                                                  imm.o
+autobaud_start                                    autobaud.o
+autobaud_value                                    autobaud.o
+b2X                                               conio.o
+                                                  ircmd.o
+boot_version                                      imm.o
+                                                  sreg.o
+bootloader                                        imm.o
+                                                  ircmd.o
+bytecopy                                          utils.o
+                                                  resolve.o
+                                                  pap.o
+                                                  udpcmd.o
+crc_boot                                          imm.o
+crcadd                                            ahdlc.o
+current_buffer                                    ahdlc.o
+d2s                                               conio.o
+displayMessage                                    msg.o
+                                                  ppp.o
+                                                  lcp.o
+                                                  ircmd.o
+                                                  udpcmd.o
+done                                              ppp.o
+dtrflag                                           ircmd.o
+dump_ppp_packet                                   ppp.o
+                                                  ahdlc.o
+exit                                              c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+foundip                                           resolve.o
+free_list                                         memory.o
+getch                                             console.o
+global_init                                       globals.o
+                                                  ircmd.o
+                                                  imm.o
+gobble_name                                       resolve.o
+icmp_echo_rx                                      ircmd.o
+icmp_upcall                                       mip.o
+init_ppp                                          ppp.o
+ip_send                                           mip.o
+                                                  mudp.o
+                                                  mtcp.o
+ip_upcall                                         mip.o
+                                                  ppp.o
+ipcp_init                                         ipcp.o
+                                                  ppp.o
+ipcp_rx                                           ipcp.o
+                                                  ppp.o
+ipcp_task                                         ipcp.o
+                                                  ppp.o
+ipcplist                                          ipcp.o
+ipid                                              mudp.o
+                                                  mtcp.o
+                                                  mip.o
+irCommand                                         ircmd.o
+irCommandProcessor                                ircmd.o
+irCommands                                        ircmd.o
+                                                  imm.o
+ircmd_buf                                         ircmd.o
+ircmd_state                                       ppp.o
+                                                  ircmd.o
+isalnum                                           c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o)
+                                                  ircmd.o
+                                                  udpcmd.o
+isalpha                                           c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalpha.o)
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(toupper.o)
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o)
+isdigit                                           c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isdigit.o)
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalnum.o)
+islower                                           c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalpha.o)
+isupper                                           c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(isalpha.o)
+lcp_init                                          lcp.o
+                                                  ppp.o
+lcp_rx                                            lcp.o
+                                                  ppp.o
+lcp_task                                          lcp.o
+                                                  ppp.o
+lcplist                                           lcp.o
+main                                              imm.o
+                                                  c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm64.o
+memory                                            memory.o
+mm                                                sreg.o
+                                                  resolve.o
+                                                  ppp.o
+                                                  pap.o
+                                                  mudp.o
+                                                  mtcp.o
+                                                  msg.o
+                                                  modem.o
+                                                  mip.o
+                                                  lcp.o
+                                                  ircmd.o
+                                                  ipcp.o
+                                                  console.o
+                                                  ahdlc.o
+                                                  udpcmd.o
+                                                  imm.o
+                                                  globals.o
+modem_toggle_dtr                                  ircmd.o
+pap_init                                          pap.o
+                                                  ppp.o
+pap_rx                                            pap.o
+                                                  ppp.o
+pap_task                                          pap.o
+                                                  ppp.o
+passthrough                                       ircmd.o
+password                                          ppp.o
+poll_serial                                       modem.o
+                                                  resolve.o
+                                                  ppp.o
+                                                  mtcp.o
+                                                  ircmd.o
+                                                  udpcmd.o
+pppConnect                                        ircmd.o
+ppp_auto_enable                                   ppp.o
+                                                  ircmd.o
+ppp_down                                          ppp.o
+                                                  lcp.o
+                                                  ircmd.o
+ppp_id                                            ppp.o
+                                                  pap.o
+                                                  lcp.o
+                                                  ipcp.o
+ppp_passive                                       ppp.o
+                                                  ircmd.o
+ppp_reject_protocol                               ppp.o
+ppp_rx_frame_count                                ppp.o
+ppp_rx_tobig_error                                ppp.o
+ppp_shut_down                                     ppp.o
+                                                  ircmd.o
+ppp_task                                          ppp.o
+ppp_upcall                                        ppp.o
+                                                  ahdlc.o
+printByte                                         conio.o
+                                                  sreg.o
+                                                  ppp.o
+                                                  ircmd.o
+printDWord                                        conio.o
+printIP                                           conio.o
+                                                  sreg.o
+                                                  ircmd.o
+                                                  udpcmd.o
+printShort                                        conio.o
+                                                  sreg.o
+                                                  ppp.o
+                                                  ircmd.o
+                                                  ahdlc.o
+                                                  udpcmd.o
+printWord                                         conio.o
+                                                  sreg.o
+                                                  ppp.o
+                                                  ahdlc.o
+                                                  imm.o
+putch                                             console.o
+raise_ppp                                         ppp.o
+                                                  ircmd.o
+resolve_callback                                  resolve.o
+resolve_name                                      resolve.o
+                                                  ircmd.o
+s2X                                               conio.o
+s2ip                                              conio.o
+                                                  sreg.o
+                                                  ircmd.o
+s2p                                               conio.o
+                                                  sreg.o
+                                                  ircmd.o
+                                                  udpcmd.o
+sRegister                                         sreg.o
+                                                  ircmd.o
+scan_packet                                       ppp.o
+                                                  lcp.o
+                                                  ipcp.o
+setup_hw                                          imm.o
+smbuff                                            msg.o
+                                                  ircmd.o
+                                                  conio.o
+                                                  imm.o
+snd_buff                                          ircmd.o
+                                                  udpcmd.o
+snd_count                                         ircmd.o
+                                                  udpcmd.o
+soc_num                                           ircmd.o
+sockets                                           ircmd.o
+strcmp                                            c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                                                  resolve.o
+tcp_clean_socket                                  mtcp.o
+tcp_close                                         mtcp.o
+                                                  ircmd.o
+tcp_init                                          mtcp.o
+                                                  ppp.o
+tcp_listen                                        mtcp.o
+tcp_open                                          mtcp.o
+                                                  ircmd.o
+tcp_process                                       mtcp.o
+                                                  ircmd.o
+tcp_send                                          mtcp.o
+                                                  ircmd.o
+tcp_sendit                                        mtcp.o
+tcp_socket                                        mtcp.o
+tcp_socket_rx                                     ircmd.o
+tcp_sport                                         mtcp.o
+                                                  sreg.o
+tcp_status                                        mtcp.o
+                                                  sreg.o
+                                                  ircmd.o
+tcp_upcall                                        mtcp.o
+                                                  mip.o
+timer_expire                                      time.o
+                                                  pap.o
+                                                  lcp.o
+                                                  ipcp.o
+timer_set                                         time.o
+                                                  pap.o
+                                                  mtcp.o
+                                                  lcp.o
+                                                  ipcp.o
+timer_timeout                                     time.o
+                                                  pap.o
+                                                  mtcp.o
+                                                  lcp.o
+                                                  ipcp.o
+tmpflag                                           ircmd.o
+toupper                                           c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(toupper.o)
+                                                  ircmd.o
+                                                  udpcmd.o
+udp_active                                        udpcmd.o
+udp_bind                                          mudp.o
+                                                  resolve.o
+                                                  udpcmd.o
+udp_close                                         mudp.o
+                                                  resolve.o
+                                                  udpcmd.o
+udp_init                                          mudp.o
+                                                  ppp.o
+udp_ip                                            sreg.o
+                                                  ircmd.o
+                                                  udpcmd.o
+udp_len                                           sreg.o
+                                                  ircmd.o
+                                                  udpcmd.o
+udp_port                                          mudp.o
+                                                  udpcmd.o
+udp_ptr                                           sreg.o
+                                                  ircmd.o
+                                                  udpcmd.o
+udp_socket                                        mudp.o
+udp_socket_rx                                     udpcmd.o
+udp_sp                                            sreg.o
+                                                  ircmd.o
+                                                  udpcmd.o
+udp_tx                                            mudp.o
+                                                  resolve.o
+                                                  udpcmd.o
+udp_upcall                                        mudp.o
+                                                  mip.o
+udpcmd                                            udpcmd.o
+                                                  ircmd.o
+username                                          ppp.o
+wait                                              console.o
+                                                  modem.o

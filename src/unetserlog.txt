@@ -1,0 +1,2004 @@
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7i
+	-Beta Version build on Aug 12 2005 at 11:18:31
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7i
+	-Beta Version build on Aug 12 2005 at 11:18:31
+ir
+OK
+CLIENTSERVERirc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 05060708 ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+rcvd [IPCP Conf_Rej 0 <NO PRI DNS> <NO SEC DNS>  ]
+Send [IPCP Conf_Req 1 <IPAddr 0.0.0.0>  ]
+rcvd [IPCP Conf_Req 4 <PIPAddr 10.10.11.200> ]
+Send [IPCP Conf_Ack 4 ]
+rcvd [IPCP Conf_Nak 1 <IPAddr 10.10.11.200>  ]
+Send [IPCP Conf_Req 2 <IPAddr 10.10.11.201>  ]
+rcvd [IPCP Conf_Ack 2  ]
+CONNECT
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 11:51:25 -0700
+quit
+221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 11:51:54 -0700
+quit
+221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 11:52:16 -0700
+OK
+irx0
+OK
+irp10.10.11.2
+OK - 250 ms
+irp10.10.11.2
+OK - 190 ms
+ird
+timer timeout
+Send [LCP TERM_Req 2 ]
+rcvd [LCP Send [TERM_ACK id 02 ]
+OK
+CLIENTSERVERirc
+Send [LCP Conf_Req 2 <MagicNumber 00000102 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+rcvd [LCP Conf_Ack 2 ]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 60616263 ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+Send [IPCP Conf_Req 2 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+rcvd [IPCP Conf_Rej 2 <NO PRI DNS> <NO SEC DNS>  ]
+Send [IPCP Conf_Req 3 <IPAddr 0.0.0.0>  ]
+rcvd [IPCP Conf_Req 4 <PIPAddr 10.10.11.200> ]
+Send [IPCP Conf_Ack 4 ]
+rcvd [IPCP Conf_Nak 3 <IPAddr 10.10.11.200>  ]
+Send [IPCP Conf_Req 4 <IPAddr 10.10.11.201>  ]
+rcvd [IPCP Conf_Ack 4  ]
+CONNECT
+irt0200.241.240.126:8016
+OK
+OK
+irx0
+OK
+irt0200.241.240.126:8016
+OK
+OK
+irx0
+OK
+irt0200.241.240.126:8016
+OK
+OK
+irx0
+OK
+irt0200.241.240.126:8016
+OK
++++irx0iririrx0iririririrt010.10.11.2:25iiririrp10.10.11.2OK
+irx0
+OK
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 11:57:06 -0700
+quit
+221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+ird
+timer timeout
+Send [LCP TERM_Req 4 ]
+rcvd [LCP Send [TERM_ACK id 04 ]
+OK
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7ix
+	-Beta Version build on Aug 12 2005 at 14:49:58
+ir
+OK
+CLIENTSERVERirc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+FAIL PPP
+CLIENTSERVERirc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+FAIL PPP
+CLIENTSERVERirc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 03040506 ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+rcvd [IPCP Conf_Rej 0 <NO PRI DNS> <NO SEC DNS>  ]
+Send [IPCP Conf_Req 1 <IPAddr 0.0.0.0>  ]
+rcvd [IPCP Conf_Req 4 <PIPAddr 10.10.11.200> ]
+Send [IPCP Conf_Ack 4 ]
+rcvd [IPCP Conf_Nak 1 <IPAddr 10.10.11.200>  ]
+Send [IPCP Conf_Req 2 <IPAddr 10.10.11.201>  ]
+rcvd [IPCP Conf_Ack 2  ]
+CONNECT
+ir
+OK
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 15:07:05 -0700
+quit
+~221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 15:07:30 -0700
+quit
+221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 15:07:54 -0700
+OK
+irx0
+OK
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 15:08:20 -0700
+fdsa
+quit
+500 5.5.1 Command unrecognized: "fdsa"
+221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+irt010.10.11.2:25
+OK
+kfjdsl;afd+++220 and ESMTP your point is?; Fri, 12 Aug 2005 15:08:53 -0700
+OK
+irx0
+500 5.5.1 Co~ÿmmand unrecognized: "kfjdsl}#;afd+++"
+
+packet with bad crc value, was %x len %d
+OK
+ird
+timer timeout
+Send [LCP TERM_Req 2 ]
+rcvd [LCP Send [TERM_ACK id 02 ]
+OK
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7ix
+	-Beta Version build on Aug 12 2005 at 14:59:34
+ir
+OK
+CLIENTSERVERirc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 4748494A ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+rcvd [IPCP Conf_Rej 0 <NO PRI DNS> <NO SEC DNS>  ]
+Send [IPCP Conf_Req 1 <IPAddr 0.0.0.0>  ]
+rcvd [IPCP Conf_Req 4 <PIPAddr 10.10.11.200> ]
+Send [IPCP Conf_Ack 4 ]
+rcvd [IPCP Conf_Nak 1 <IPAddr 10.10.11.200>  ]
+Send [IPCP Conf_Req 2 <IPAddr 10.10.11.201>  ]
+rcvd [IPCP Conf_Ack 2  ]
+CONNECT
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 15:28:32 -0700
+quit
+~221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+irt0200.241.240.126:8016
+OK
+quitSOCKET CLOSED
+irt0200.241.240.126:8016
+timer timeout
+FAIL TCP
+ir
+OK
+irt010.10.11.2:25
+timer timeout
+FAIL TCP
+irp10.10.11.2
+FAIL
+ir
+OK
+ir
+OK
+ird
+timer timeout
+Send [LCP TERM_Req 2 ]
+timer timeout
+Send [LCP TERM_Req 2 ]
+timer timeout
+Send [LCP TERM_Req 2 ]
+timer timeout
+Send [LCP TERM_Req 2 ]
+OK
+ir
+OK
+ir
+OK
+ir
+OK
+CLIENTSERVERirc
+Send [LCP Conf_Req 2 <MagicNumber 00000102 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+rcvd [LCP Conf_Ack 2 ]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 4C4D4E4F ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+Send [IPCP Conf_Req 2 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+rcvd [IPCP Conf_Rej 2 <NO PRI DNS> <NO SEC DNS>  ]
+Send [IPCP Conf_Req 3 <IPAddr 0.0.0.0>  ]
+timer timeout
+Send [IPCP Conf_Req 3 <IPAddr 0.0.0.0>  ]
+timer timeout
+Send [IPCP Conf_Req 3 <IPAddr 0.0.0.0>  ]
+FAIL PPP
+irCLIENTSERVERirc
+Send [LCP Conf_Req 3 <MagicNumber 00000103 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+rcvd [LCP Conf_Ack 3 ]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 696A6B6C ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+Send [IPCP Conf_Req 3 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+rcvd [IPCP Conf_Rej 3 <NO PRI DNS> <NO SEC DNS>  ]
+Send [IPCP Conf_Req 4 <IPAddr 0.0.0.0>  ]
+rcvd [IPCP Conf_Req 4 <PIPAddr 10.10.11.200> ]
+Send [IPCP Conf_Ack 4 ]
+rcvd [IPCP Conf_Nak 4 <IPAddr 10.10.11.200>  ]
+Send [IPCP Conf_Req 5 <IPAddr 10.10.11.201>  ]
+rcvd [IPCP Conf_Ack 5  ]
+CONNECT
+irt0200.241.240.126:8016
+OK
+OK
+irx0
+OK
+irt0200.241.240.126:87016
+OK
+quit
+SOCKET CLOSED
+ir
+OK
+irp10.10.11.2
+FAIL
+ird
+timer timeout
+Send [LCP TERM_Req 5 ]
+timer timeout
+Send [LCP TERM_Req 5 ]
+timer timeout
+Send [LCP TERM_Req 5 ]
+timer timeout
+Send [LCP TERM_Req 5 ]
+OK
+ir
+OK
+ir
+OK
+CLIENTSERVERirc
+Send [LCP Conf_Req 5 <MagicNumber 00000105 00 >]
+timer timeout
+Send [LCP Conf_Req 5 <MagicNumber 00000105 00 >]
+timer timeout
+Send [LCP Conf_Req 5 <MagicNumber 00000105 00 >]
+timer timeout
+Send [LCP Conf_Req 5 <MagicNumber 00000105 00 >]
+FAIL PPP
+CLIENTSERVERirc
+Send [LCP Conf_Req 5 <MagicNumber 00000105 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+rcvd [LCP Conf_Ack 5 ]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 62636465 ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+Send [IPCP Conf_Req 5 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+rcvd [IPCP Conf_Rej 5 <NO PRI DNS> <NO SEC DNS>  ]
+Send [IPCP Conf_Req 6 <IPAddr 0.0.0.0>  ]
+rcvd [IPCP Conf_Req 4 <PIPAddr 10.10.11.200> ]
+Send [IPCP Conf_Ack 4 ]
+rcvd [IPCP Conf_Nak 6 <IPAddr 10.10.11.200>  ]
+Send [IPCP Conf_Req 7 <IPAddr 10.10.11.201>  ]
+rcvd [IPCP Conf_Ack 7  ]
+CONNECT
+irt0200.241.240.126:8016
+OK
+OK
+irx0
+OK
+irt0200.241.240.126:8016
+OK
++++OK
+irx0
+OK
+irp10.10.11.2
+OK - 200 ms
+irt0200.241.240.126:8016
+OK
+OK
+irx0
+OK
+irp10.10.11.2
+OK - 200 ms
+irt0200.241.240.126:8016
+OK
+quit
+SOCKET CLOSED
+irx0
+OK
+irp10.10.11.2
+OK - 190 ms
+irt0200.241.240.126:8016
+OK
+quit
+SOCKET CLOSED
+irp10.10.121.2
+OK - 190 ms
+irt0200.241.240.126:8016
+OK
+quit
+SOCKET CLOSED
+irp10.10.11.2
+OK - 190 ms
+irt0200.241.240.126:8016
+OK
+quit
+SOCKET CLOSED
+irp10.10.11.2
+OK - 190 ms
+irt1200.241.12440.126:8016
+timer timeout
+FAIL TCP
+irp10.10.11.2
+OK - 190 ms
+irx1
+OK
+irt0200.241.140.126:8016
+timer timeout
+FAIL TCP
+irp10.10.11.2
+OK - 190 ms
+irt010.10.11.2:25
+OK
+quit
+220 and ESMTP your point is?; Fri, 12 Aug 2005 15:44:29 -0700
+irt0200.241.140.126:8016221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+ir
+OK
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 15:45:00 -0700
+OK
+irx0
+OK
+irt0200.241.240.126:8016
+OK
+quit
+SOCKET CLOSED
+irp10.10.11.2
+OK - 200 ms
+irt0200.241.240.126:8016
+OK
+quit
+SOCKET CLOSED
+irp10.10.11.2
+OK - 200 ms
+irt0200.241.240.126:8016
+OK
++++OK
+irx0
+OK
+irp10.10.11.2
+OK - 200 ms
+irt010200.241.240.126:8016
+OK
+quit
+SOCKET CLOSED
+irp10.10.11.2
+OK - 654920 ms
+irt1200.241.240.126:8016
+OK
+quit
+SOCKET CLOSED
+irp10.10.112.
+FAIL
+irp10.10.11.2
+OK - 190 ms
+ird
+timer timeout
+Send [LCP TERM_Req 7 ]
+rcvd [LCP Send [TERM_ACK id 07 ]
+OK
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7ix
+	-Beta Version build on Aug 12 2005 at 14:59:34
+irc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+FAIL PPP
+ir
+OK
+CLIENTSERVERirc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 72737475 ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+rcvd [IPCP Conf_Rej 0 <NO PRI DNS> <NO SEC DNS>  ]
+Send [IPCP Conf_Req 1 <IPAddr 0.0.0.0>  ]
+rcvd [IPCP Conf_Req 4 <PIPAddr 10.10.11.200> ]
+Send [IPCP Conf_Ack 4 ]
+rcvd [IPCP Conf_Nak 1 <IPAddr 10.10.11.200>  ]
+Send [IPCP Conf_Req 2 <IPAddr 10.10.11.201>  ]
+rcvd [IPCP Conf_Ack 2  ]
+CONNECT
+irp10.10.11.2
+OK - 654910 ms
+irt010.10.112.2:25
+OK
+quit
+220 and ESMTP your point is?; Fri, 12 Aug 2005 15:55:13 -0700
+221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+irt010.10.11.2:25
+OK
+quit
+220 and ESMTP your point is?; Fri, 12 Aug 2005 15:55:27 -0700
+221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+irp10.10.11.2
+OK - 230 ms
+irt010.10.11.2:25
+OK
++++220 and ESMTP your point is?; Fri, 12 Aug 2005 15:56:45 -0700
+OK
+irx0
+Socket state = 0004
+~500 5.5.1 Command unrecÿ}ognized: "+++"
+
+packet with bad crc value, was %x len %d
+OK
+irp10.10.11.2
+OK - 240 ms
+irt010.10.11.2:25
+Socket state = 000A
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 15:57:14 -0700
+quit
+221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7ix
+	-Beta Version build on Aug 12 2005 at 15:44:23
+CLIENTSERVERirc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 5758595A ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+rcvd [IPCP Conf_Rej 0 <NO PRI DNS> <NO SEC DNS>  ]
+Send [IPCP Conf_Req 1 <IPAddr 0.0.0.0>  ]
+rcvd [IPCP Conf_Req 4 <PIPAddr 10.10.11.200> ]
+Send [IPCP Conf_Ack 4 ]
+rcvd [IPCP Conf_Nak 1 <IPAddr 10.10.11.200>  ]
+Send [IPCP Conf_Req 2 <IPAddr 10.10.11.201>  ]
+rcvd [IPCP Conf_Ack 2  ]
+CONNECT
+irp10.10.11.2
+OK - 200 ms
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Fri, 12 Aug 2005 16:02:05 -0700
+OK
+irx0
+OK
+irt010.10.11.2:25
+OK
+quit
+220 and ESMTP your point is?; Fri, 12 Aug 2005 16:02:28 -0700
+221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+irt010.10.11.2:25
+OK
+quit
+~220 and ESMTP your point is?; Fri, 12 Aug 2005 16:02:ÿ}45 -0700
+
+quit
+OK
+irx0
+timer timeout
+OK
+irp10.10.11.2
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7ix
+	-Beta Version build on Aug 31 2005 at 11:35:21
+irc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+timer timeout
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+FAIL PPP
+CLIENTSERVERir
+OK
+irc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 2728292A ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+rcvd [IPCP Conf_Rej 0 <NO PRI DNS> <NO SEC DNS>  ]
+rcvd [IPCP Conf_Req 4 <PIPAddr 10.10.11.200> ]
+Send [IPCP Conf_Ack 4 ]
+Send [IPCP Conf_Req 1 <IPAddr 0.0.0.0>  ]
+rcvd [IPCP Conf_Nak 1 <IPAddr 10.10.11.200>  ]
+Send [IPCP Conf_Req 2 <IPAddr 10.10.11.201>  ]
+rcvd [IPCP Conf_Ack 2  ]
+CONNECT
+irs6=64.40.160.10
+64.40.160.10
+irp mycal.net
+OK - 200 ms
+irt0www.mycal.net:80
+OK
+get / http/1.0
+HTTP/1.1 400 Bad Request
+Date: Wed, ~ÿ}#31 Aug 2005 18:36:38 G} MT
+SOK
+irx0
+timer timeout
+OK
+irt0www.mycal.net:980
+FAIL DNS
+ird
+timer timeout
+Send [LCP TERM_Req 2 ]
+timer timeout
+Send [LCP TERM_Req 2 ]
+timer timeout
+Send [LCP TERM_Req 2 ]
+timer timeout
+Send [LCP TERM_Req 2 ]
+OK
+ir
+OK
+ir
+OK
+CLIENTSERVERirc
+Send [LCP Conf_Req 2 <MagicNumber 00000102 00 >]
+rcvd [LCP ConfReq 0 <bad option 000D> <bad option 0011> <bad option 0013> <bad option 0017> ]
+Send [Conf_Rej 0 ]
+ ]
+rcvd [LCP Conf_Ack 2 ]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 5F606162 ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+Send [IPCP Conf_Req 2 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+rcvd [IPCP Conf_Rej 2 <NO PRI DNS> <NO SEC DNS>  ]
+rcvd [IPCP Conf_Req 4 <PIPAddr 10.10.11.200> ]
+Send [IPCP Conf_Ack 4 ]
+Send [IPCP Conf_Req 3 <IPAddr 0.0.0.0>  ]
+rcvd [IPCP Conf_Nak 3 <IPAddr 10.10.11.200>  ]
+Send [IPCP Conf_Req 4 <IPAddr 10.10.11.201>  ]
+rcvd [IPCP Conf_Ack 4  ]
+CONNECT
+irs6=64.40.160,.1.10
+64.40.160.10
+irs20
+67
+irs20=47
+47
+irt0www.mycal.net:80
+OK
+get / http/1.0
+
+~HTTP/1.1 400 Bad Request
+Date: Wed, 31 ÿ}Aug 2005 18:39:42 GMT
+Spacket length 109 with bad crc was 3CF1
+23 00 21 45 00 00 68 20 55 40 00 3D 06 27 2B 40 
+28 A0 15 0A 0A 0B C9 00 50 5F F9 2C 8A B0 A0 00 00 00 13 50 18 16 D0 6B 6E 00 00 65 72 76 65 72 
+3A 20 41 70 61 63 68 65 2F 31 2E 33 2E 32 32 20 28 55 6E 69 78 29 20 20 28 52 65 64 2D 48 61 74 
+2F 4C 69 6E 75 78 29 20 6D 6F 64 5F 73 73 6C 2F 32 2E 38 2E 35 20 4F 70 65 6E 53 89 97 
+ recalc crc is 3CF1
+erver: Apache/1.3.22 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.5 OpenSSL/0.9.6b DAV/1.0.2 PHP/4.0.6 mod_perl/1.~ÿ24_01 mod_throttle/3.1.packet length 108 with bad crc was 96FA
+00 21 45 00 00 68 20 59 40 00 3D 06 27 27 40 28 
+A0 15 0A 0A 0B C9 00 50 5F F9 2C 8A B1 20 00 00 00 13 50 18 16 D0 CA 97 00 00 32 0D 0A 43 6F 6E 
+6E 65 63 74 69 6F 6E 3A 20 63 6C 6F 73 65 0D 0A 43 6F 6E 74 65 6E 74 2D 54 79 70 65 3A 20 74 65 
+78 74 2F 68 74 6D 6C 3B 20 63 68 61 72 73 65 74 3D 69 73 6F 2D 38 38 35 39 2D B3 88 
+ recalc crc is FF09
+2
+Connection: close
+Content-Type: text/html; charset=iso-8859-~ÿ}#1
+
+<!DOCTYPE HTML PUBLIC "-//IE} TF//DTD HTML 2.0//EN">
+<HTML><Hpacket length 107 with bad crc was D2D4
+21 45 00 00 68 20 5D 40 00 3D 06 27 23 40 28 A0 
+15 0A 0A 0B C9 00 50 5F F9 2C 8A B1 A0 00 00 00 13 50 18 16 D0 31 43 00 00 45 41 44 3E 0A 3C 54 
+49 54 4C 45 3E 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 3C 2F 54 49 54 4C 45 3E 0A 3C 2F 48 
+45 41 44 3E 3C 42 4F 44 59 3E 0A 3C 48 31 3E 42 61 64 20 52 65 71 75 65 73 B4 A4 
+ recalc crc is D2D4
+EAD>
+<TITLE>400 Bad Request</TITLE>
+</HEAD><BODY>
+<H1>Bad Request</H1>
+Your browser sent a request that thi~ÿs ser
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7ix
+	-Beta Version build on Sep 12 2005 at 16:10:35
+irc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 25 <asyncmap 00000000 - 00000000 -  ok><magic 090A0B0C ><pcomp> <accomp> ]
+Sending LCP ACK id 25
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 49 <bad option 0002> ]
+Send [Conf_Rej 49 ]
+ ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 50 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 50 ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+CONNECT
+irt0 10.10.11.2:25
+OK
+220 and ESMTP your point is?; Mon, 12 Sep 2005 16:29:53 -0700
+012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901Used Count 02
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+Used Count 03
+23456789012345678901234567890123456789012345678901234567890123456789012345678901234567
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7ix
+	-Beta Version build on Sep 12 2005 at 16:31:47
+irc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 31 <asyncmap 00000000 - 00000000 -  ok><magic 53545556 ><pcomp> <accomp> ]
+Sending LCP ACK id 31
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 61 <bad option 0002> ]
+Send [Conf_Rej 61 ]
+ ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 62 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 62 ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+CONNECT
+irt0 10.10.11.2:25
+OK
+220 and ESMTP your point is?; Mon, 12 Sep 2005 16:49:15 -0700
+012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+Used Count 02
+23456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7ix
+	-Beta Version build on Sep 12 2005 at 16:44:31
+irc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 33 <asyncmap 00000000 - 00000000 -  ok><magic 4D4E4F50 ><pcomp> <accomp> ]
+Sending LCP ACK id 33
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 65 <bad option 0002> ]
+Send [Conf_Rej 65 ]
+ ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 66 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 66 ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+CONNECT
+irt0 10.10.11.2:25
+OK
+220 and ESMTP your point is?; Mon, 12 Sep 2005 17:02:18 -0700
+fdjksal;fjkd;sajf;dsafjkds;fj;dsajfiririrquit
+500 5.5.1 Command unrecognized: "fdjksal;fjkd;sajf;dsafjkds;fj;dsajfiririrquit"
+quit
+221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+irt0 10.10.11.2:25
+OK
+220 and ESMTP your point is?; Mon, 12 Sep 2005 17:03:37 -0700
+012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901Used Count 02
+2345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+500 5.5.1 Command unrecognized: "01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567...456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789"
+012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901Used Count 02
+2345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+500 5.5.1 Command unrecognized: "01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567...456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789"
+helo
+Used Count 02
+
+Used Count 03
+SOCKET CLOSED
+irt0 10.10.11.2:25
+OK
+220 and ESMTP your point is?; Mon, 12 Sep 2005 17:06:42 -0700
+012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901Used Count 02
+2345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+500 5.5.1 Command unrecognized: "01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567...456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789"
+helo
+501 5.0.0 helo requires domain address
+quit
+221 2.0.0 mycal.net closing connection
+SOCKET CLOSED
+irn mycal.net
+Used Count 02
+OK
+64.40.170.10
+irs6
+64.40.160.10
+irs6=66.174.3.7
+66.174.3.7
+ir
+OK
+irn mycal.net
+Used Count 02
+Used Count 02
+Used Count 02
+FAIL DNS
+irn mycal.net
+Used Count 02
+Used Count 02
+Used Count 02
+FAIL DNS
+irs6
+66.174.3.7
+irs7
+64.40.160.10
+irn mycal.net
+Used Count 02
+Used Count 02
+Used Count 02
+FAIL DNS
+irn svn.net
+Used Count 02
+Used Count 02
+Used Count 02
+FAIL DNS
+irn svn.net
+Used Count 02
+Used Count 02
+Used Count 02
+FAIL DNS
+irs6=66.174.6.7
+66.174.6.7
+irn mycal.net
+Used Count 02
+Used Count 02
+Used Count 02
+FAIL DNS
+irn svn.net
+Used Count 02
+Used Count 02
+Used Count 02
+FAIL DNS
+irs25
+04
+irs25=7
+07
+irn mycal.net
+Used Count 02
+Used Count 02
+Used Count 02
+FAIL DNS
+irn mycal.net
+Used Count 02
+Used Count 02
+Used Count 02
+FAIL DNS
+ir
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7ix
+	-Beta Version build on Sep 12 2005 at 17:24:56
+irc
+Used Count 01
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+rcvd [LCP ConfReq 35 <asyncmap 00000000 - 00000000 -  ok><magic FCFDFEFF ><pcomp> <accomp> ]
+Sending LCP ACK id 35
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 69 <bad option 0002> ]
+Send [Conf_Rej 69 ]
+ ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 70 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 70 ]
+Used Count 01
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Used Count 01
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used Count 01
+Used
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7ix
+	-Beta Version build on Sep 12 2005 at 17:32:20
+irc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 38 <asyncmap 00000000 - 00000000 -  ok><magic CACBCCCD ><pcomp> <accomp> ]
+Sending LCP ACK id 38
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 75 <bad option 0002> ]
+Send [Conf_Rej 75 ]
+ ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 76 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 76 ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+CONNECT
+irn mycal.net
+OK
+64.40.170.10
+irs6=66.174.3.7
+66.174.3.7
+irn mycal.net
+FAIL DNS
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7j
+	-Beta Version build on Sep 13 2005 at 11:14:24
+ircSend [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 52 <asyncmap 00000000 - 00000000 -  ok><magic 6D6E6F70 ><pcomp> <accomp> ]
+Sending LCP ACK id 52
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 103 <bad option 0002> ]
+Send [Conf_Rej 103 ]
+ ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 104 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 104 ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+
+CONNECT
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Tue, 13 Sep 2005 11:51:57 -0700
+helo
+501 5.0.0 helo requires domain address
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012timer timeout
+
+SOCKET CLOSED
+
+SOCKET CLOSED
+ir
+OK
+ir
+OK
+irt010.10.11.2:25
+OK
+220 and ESMTP your point is?; Tue, 13 Sep 2005 11:55:02 -0700
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678500 5.5.1 Command unrecognized: "12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345967890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7j
+	-Beta Version build on Sep 13 2005 at 11:44:27
+ircSend [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 53 <asyncmap 00000000 - 00000000 -  ok><magic 38393A3B ><pcomp> <accomp> ]
+Sending LCP ACK id 53
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 105 <bad option 0002> ]
+Send [Conf_Rej 105 ]
+ ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 106 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 106 ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+
+CONNECT
+irt0 10.10.11.2:25
+OK
+220 and ESMTP your point is?; Tue, 13 Sep 2005 12:02:10 -0700
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+9012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456500 5.5.1 Command unrecognized: "12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345789067890...8901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567"
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234500 5.5.1 Command unrecognized: "8901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567...5678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234"
+56789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012500 5.5.1 Command unrecognized: "5678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234...2345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901"
+34567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890500 5.5.1 Command unrecognized: "2345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901...9012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678"
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678500 5.5.1 Command unrecognized: "9012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678...6789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345"
+9012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "6789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7j
+	-Beta Version build on Sep 13 2005 at 11:56:06
+ir
+OK
+~ÿ}#} !E} } (¼¡@} =}&ßL@( }/À¨}!}"} P;!“vÅ} } } } }!P}1}6Ðc8} } ‘$~~ÿ}#} !E} } (¼£@} =}&ßJ@( }/À¨}!}"} P;!“vÅ} } } } }!P}1}6Ðc8} } g8~~ÿ}#} !E} } (¼¥@} =}&ßH@( }/À¨}!}"} P;!“vÅ} } } } }!P}1}6Ðc8} } ‚ì~~ÿ}#} !E} } (¼§@} =}&ßF@( }/À¨}!}"} P;!“vÅ} } } } }!P}1}6Ðc8} } ‹}!~~ÿ}#} !E} } (¼©@} =}&ßD@( }/À¨}!}"} P;!“vÅ} } } } }!P}1}6Ðc8} } ¦¼~ircSend [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 55 <asyncmap 00000000 - 00000000 -  ok><magic 1C1D1E1F ><pcomp> <accomp> ]
+Sending LCP ACK id 55
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 109 <bad option 0002> ]
+Send [Conf_Rej 109 ]
+ ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 110 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 110 ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+
+CONNECT
+irt010.10.11.2:ir
+OK
+ir
+OK
+ir
+OK
+irt0www.svn.net:80
+OK
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7j
+	-Beta Version build on Sep 13 2005 at 11:56:06
+ircSend [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 56 <asyncmap 00000000 - 00000000 -  ok><magic 31323334 ><pcomp> <accomp> ]
+Sending LCP ACK id 56
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 111 <bad option 0002> ]
+Send [Conf_Rej 111 ]
+ ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 112 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 112 ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+
+CONNECT
+irt0www.svn.net:80
+OK
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+HTTP/1.1 400 Bad Request
+Date: Tue, 13 Sep 2005 19:03:09 GMT
+Server: Apache
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML><HEAD>
+<TITLE>400 Bad Request</TITLE>
+</HEAD><BODY>
+<H1>Bad Request</H1>
+Your browser sent a request that this server could not understand.<P>
+The request line contained invalid characters following the protocol string.<P>
+<P>
+</BODY></HTML>
+
+SOCKET CLOSED
+irtpo064.40.160.15:80
+OK
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+HTTP/1.1 400 Bad Request
+Date: Tue, 13 Sep 2005 19:05:08 GMT
+Server: Apache
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7j
+	-Beta Version build on Sep 22 2005 at 18:06:33
+irc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 14 <asyncmap 00000000 - 00000000 -  ok><magic 66676869 ><pcomp> <accomp> ]
+Sending LCP ACK id 14
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 27 <bad option 0002> ]
+Send [Conf_Rej 27 ]
+ ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 28 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 28 ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+CONNECT
+ikrt0
+ERROR
+ir
+OK
+irt010.10.11.2:25
+OK
+uir220 and ESMTP your point is?; Thu, 22 Sep 2005 18:29:17 -0700
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "uir123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+
+500 5.5.1 Command unrecognized: ""
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234590123467890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678500 5.5.1 Command unrecognized: "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234590123467890...1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on May 25 2006 at 11:56:54
+irc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 16 <asyncmap 00000000 - 00000000 -  ok><magic 7E7F8081 ><pcomp> <accomp> ]
+Sending LCP ACK id 16
+ ]
+rcvd [LCP Conf_Ack 0 ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [IPCP Conf_Req 31 <bad option 0002> ]
+Send [Conf_Rej 31 ]
+ ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Nak 0 <IPAddr 0.0.0.0> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Req 32 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 32 ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+CONNECT
+irt0 10.10.11.2:25
+OK
+220 and ESMTP your point is?; Thu, 25 May 2006 12:35:43 -0700
+012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0100---012345678901234567890123456Full buffer send 
+@789012345678901234567890123456789012345678901234567890123456789---0200---012345678901234567890123456789012345678901234567890123Full buffer send 
+@456789012345678901234567890123456789---0300---012345678901234567890123456789012345678901234567890123456789012345678901234567890Full buffer send 
+@123456789---0400---012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0500---0123456Full buffer send 
+@78901234567890123456789012345678901234567890123456789012345678901234567890123456789---0600---0123456789012345678901234567890123Full buffer send 
+@45678901234567890123456789012345678901234567890123456789---0700---@@J@iriririr
+
+
+
+
+@500 5.5.1 Command unrecognized: "012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0100---...7890123456789012345678901234567890123456789012345678901234567890123456789---0700---Jiriririr"
+500 5.5.1 Command unrecognized: ""
+500 5.5.1 Command unrecognized: ""
+500 5.5.1 Command unrecognized: ""
+500 5.5.1 Command unrecognized: ""
+012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0100---012345678901234567890123456Full buffer send 
+@789012345678901234567890123456789012345678901234567890123456789---0200---012345678901234567890123456789012345678901234567890123Full buffer send 
+@456789012345678901234567890123456789---0300---012345678901234567890123456789012345678901234567890123456789012345678901234567890Full buffer send 
+@123456789---0400---012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0500---0123456Full buffer send 
+@78901234567890123456789012345678901234567890123456789012345678901234567890123456789---0600---0123456789012345678901234567890123Full buffer send 
+&45678901234567890123456789012345678901234567890123456789---0700---&ir
+
+@500 5.5.1 Command unrecognized: "012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0100--...01234567890123456789012345678901234567890123456789012345678901234567890123456789---0500---0123456ir"
+500 5.5.1 Command unrecognized: ""
+012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0100---012345678901234567890123456Full buffer send 
+@789012345678901234567890123456789012345678901234567890123456789---0200---012345678901234567890123456789012345678901234567890123Full buffer send 
+@456789012345678901234567890123456789---0300---012345678901234567890123456789012345678901234567890123456789012345678901234567890Full buffer send 
+@123456789---0400---012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0500---0123456Full buffer send 
+@78901234567890123456789012345678901234567890123456789012345678901234567890123456789---0600---0123456789012345678901234567890123Full buffer send 
+@45678901234567890123456789012345678901234567890123456789---0700---
+@500 5.5.1 Command unrecognized: "012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0100---...012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0700---"
+012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0100---012345678901234567890123456Full buffer send 
+@789012345678901234567890123456789012345678901234567890123456789---0200---012345678901234567890123456789012345678901234567890123Full buffer send 
+@456789012345678901234567890123456789---0300---012345678901234567890123456789012345678901234567890123456789012345678901234567890Full buffer send 
+@123456789---0400---012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0500---0123456Full buffer send 
+@78901234567890123456789012345678901234567890123456789012345678901234567890123456789---0600---0123456789012345678901234567890123Full buffer send 
+@45678901234567890123456789012345678901234567890123456789---0700---@@012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0100---012345678901234567890123456Full buffer send 
+@789012345678901234567890123456789012345678901234567890123456789---0200---012345678901234567890123456789012345678901234567890123Full buffer send 
+@456789012345678901234567890123456789---0300---012345678901234567890123456789012345678901234567890123456789012345678901234567890Full buffer send 
+@123456789---0400---012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789---0500---0123456Full buffer send 
+@78901234567890123456789012345678901234567890123456789012345678901234567890123456789---0600---0123456789012345678901234567890123Full buffer send 
+@45678901234567890123456789012345678901234567890123456789---0700---@
+OK
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on Jun 21 2006 at 11:05:33
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on Jun 21 2006 at 20:42:57
+ir
+OK
+ircp
+OK
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on Jun 21 2006 at 21:26:28
+ircp
+OK
+~ÿ}#À!}!}!} }4}"}&} } } } }%}&}.š­³}'}"}(}"ô}-~~ÿ}#À!}!}!} }4}"}&} } } } }%}&}.š­³}'}"}(}"ô}-~~ÿ}#À!}!}!} }4}"} }%}&}.FAIL PPP
+š­³}'}"}(}"ô}-~~ÿ}#À!}"} } }*}%}&} } }!} ÅG~~ÿ}#À!}!}!} }4}"}&} } } } }%}&}.š­³(}"ô}-~~ÿ}#À!}!}!} }4}"}&} } } } }%}&}.~ÿ}#À!}!}!} }4}"}&} } } } }%}&}.š­³}'}"}(}"ô}-~
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on Jun 21 2006 at 21:54:47
+ircp
+OK
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on Jun 21 2006 at 22:00:31
+ircp
+OK
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+FAIL PPP
+packet length 17 with bad crc was D95F
+06 00 00 00 00 05 06 58 E2 D0 BD 07 02 08 02 0A 
+70 
+ recalc crc is D95F
+ir
+OK
+ir
+OK
+ircp
+OK
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+FAIL PPP
+packet length 21 with bad crc was 9AEC
+01 00 14 02 06 00 00 00 00 05 06 08 F6 EB 1D 07 
+02 08 02 0D 94 
+ recalc crc is 9AEC
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on Jun 21 2006 at 22:00:31
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on Jun 21 2006 at 22:05:56
+ircp
+OK
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+
+ir
+OK
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on Jun 21 2006 at 22:13:20
+ircp
+OK
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 13141516 ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 1 <bad option 0002> ]
+Send [Conf_Rej 1 ]
+ ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 2 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 2 ]
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+1
+irp 10.10.11.2
+FAIL
+irs2
+0 0 0.0.0.0 0
+irs3
+0.7n-alpha
+irs4
+0001
+irs5
+192.168.1.2
+irs6
+64.40.160.10
+irp 192.168.1.2
+OK - 650 ms
+irp svn.net
+FAIL DNS
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on Jun 21 2006 at 22:16:13
+ircp
+OK
+ircp
+OK
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on Jun 21 2006 at 22:18:32
+ir
+OK
+irc
+Send [LCP Conf_Req 0 <MagicNumber 00000100 00 >]
+rcvd [LCP ConfReq 2 <asyncmap 00000000 - 00000000 -  ok><magic F7F8F9FA ><pcomp> <accomp> ]
+Sending LCP ACK id 2
+ ]
+rcvd [LCP Conf_Ack 0 ]
+rcvd [IPCP Conf_Req 3 <bad option 0002> ]
+Send [Conf_Rej 3 ]
+ ]
+Send [IPCP Conf_Req 0 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 4 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 4 ]
+rcvd [IPCP Conf_Nak 0 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 1 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 1  ]
+CONNECT
+irp svn.net
+FAIL DNS
+ird
+Send [LCP TERM_Req 1 ]
+rcvd [LCP Send [TERM_ACK id 01 ]
+OK
+ircp
+OK
+Send [LCP Conf_Req 1 <MagicNumber 00000101 00 >]
+rcvd [LCP ConfReq 1 <asyncmap 00000000 - 00000000 -  ok><magic 14151617 ><pcomp> <accomp> ]
+Sending LCP ACK id 1
+ ]
+rcvd [LCP Conf_Ack 1 ]
+rcvd [IPCP Conf_Req 1 <bad option 0002> ]
+Send [Conf_Rej 1 ]
+ ]
+Send [IPCP Conf_Req 1 <IPAddr 0.0.0.0> <Pri-DNS> 0.0.0.0> <Sec-DNS 0.0.0.0>  ]
+rcvd [Unknown PPP Protocol Type FD]
+rcvd [IPCP Conf_Req 2 <PIPAddr 192.168.1.1> ]
+Send [IPCP Conf_Ack 2 ]
+rcvd [IPCP Conf_Nak 1 <IPAddr 192.168.1.1> <Pri-DNS 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+Send [IPCP Conf_Req 2 <IPAddr 192.168.1.2> <Pri-DNS> 64.40.160.10> <Sec-DNS 64.40.160.10>  ]
+rcvd [IPCP Conf_Ack 2  ]
+CONNECT
+ir
+OK
+ir
+OK
+ir
+OK
+
+
+--Log Started---
+uNetSerial, Embedded internet TCP/IP stack over PPP, Beta - Version 0.7n-alpha
+	-Beta Version build on Jun 22 2006 at 19:12:08
+ir
+OK
+ir
+OK
+ir
+OK
+ir
+OK
+ir
+OK
+ircf
+00023FDCONNECT
+irc
+00025FDCONNECT
+irp 192.168.1.1
+OK - 260 ms
+irc
+00027FDCONNECT

@@ -1,0 +1,603 @@
+
+xmboot.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  000002e8  0000037c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000002e8  00000000  00000000  00000094  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000002  00800100  00800100  0000037c  2**0
+                  ALLOC
+  3 .noinit       00000000  00800102  00800102  0000037c  2**0
+                  CONTENTS
+  4 .eeprom       00000000  00810000  00810000  0000037c  2**0
+                  CONTENTS
+  5 .stab         000006f0  00000000  00000000  0000037c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  6 .stabstr      00000870  00000000  00000000  00000a6c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 46 00 	jmp	0x8c
+   4:	0c 94 63 00 	jmp	0xc6
+   8:	0c 94 63 00 	jmp	0xc6
+   c:	0c 94 63 00 	jmp	0xc6
+  10:	0c 94 63 00 	jmp	0xc6
+  14:	0c 94 63 00 	jmp	0xc6
+  18:	0c 94 63 00 	jmp	0xc6
+  1c:	0c 94 63 00 	jmp	0xc6
+  20:	0c 94 63 00 	jmp	0xc6
+  24:	0c 94 63 00 	jmp	0xc6
+  28:	0c 94 63 00 	jmp	0xc6
+  2c:	0c 94 63 00 	jmp	0xc6
+  30:	0c 94 63 00 	jmp	0xc6
+  34:	0c 94 63 00 	jmp	0xc6
+  38:	0c 94 63 00 	jmp	0xc6
+  3c:	0c 94 63 00 	jmp	0xc6
+  40:	0c 94 63 00 	jmp	0xc6
+  44:	0c 94 63 00 	jmp	0xc6
+  48:	0c 94 63 00 	jmp	0xc6
+  4c:	0c 94 63 00 	jmp	0xc6
+  50:	0c 94 63 00 	jmp	0xc6
+  54:	0c 94 63 00 	jmp	0xc6
+  58:	0c 94 63 00 	jmp	0xc6
+  5c:	0c 94 63 00 	jmp	0xc6
+  60:	0c 94 63 00 	jmp	0xc6
+  64:	0c 94 63 00 	jmp	0xc6
+  68:	0c 94 63 00 	jmp	0xc6
+  6c:	0c 94 63 00 	jmp	0xc6
+  70:	0c 94 63 00 	jmp	0xc6
+  74:	0c 94 63 00 	jmp	0xc6
+  78:	0c 94 63 00 	jmp	0xc6
+  7c:	0c 94 63 00 	jmp	0xc6
+  80:	0c 94 63 00 	jmp	0xc6
+  84:	0c 94 63 00 	jmp	0xc6
+  88:	0c 94 63 00 	jmp	0xc6
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e8 ee       	ldi	r30, 0xE8	; 232
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac
+
+000000a8 <.__do_copy_data_loop>:
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+
+000000ac <.__do_copy_data_start>:
+  ac:	a0 30       	cpi	r26, 0x00	; 0
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8
+
+000000b2 <__do_clear_bss>:
+  b2:	11 e0       	ldi	r17, 0x01	; 1
+  b4:	a0 e0       	ldi	r26, 0x00	; 0
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a2 30       	cpi	r26, 0x02	; 2
+  be:	b1 07       	cpc	r27, r17
+  c0:	e1 f7       	brne	.-8      	; 0xba
+  c2:	0c 94 65 00 	jmp	0xca
+
+000000c6 <__bad_interrupt>:
+  c6:	0c 94 00 00 	jmp	0x0
+
+000000ca <main>:
+ *   routines on different chips.
+ * 
+ */
+int main(void)
+{
+  ca:	cf ef       	ldi	r28, 0xFF	; 255
+  cc:	df e0       	ldi	r29, 0x0F	; 15
+  ce:	de bf       	out	0x3e, r29	; 62
+  d0:	cd bf       	out	0x3d, r28	; 61
+    unsigned char ch;   /* Result of last packet receive or response. */
+    unsigned char ec;   /* Error counter. */
+    unsigned short pn;  /* Expected packet number. */
+    unsigned short bofs;/* Packet buffer offset. */
+    unsigned long addr; /* Program memory byte address. */
+    unsigned char buff[SPM_PAGESIZE];
+
+    /*
+     * GCC depends on register r1 set to 0.
+     */
+    asm volatile ("clr r1");
+  d2:	11 24       	eor	r1, r1
+
+    /*
+     * No interrupts used.
+     */
+    cli();
+  d4:	f8 94       	cli
+
+    /*
+     * Initialize UART baudrate and enable transmitter and receiver.
+     */
+    outb(UBRR0L, (unsigned char)BAUDRATE_FACTOR);
+  d6:	87 e1       	ldi	r24, 0x17	; 23
+  d8:	89 b9       	out	0x09, r24	; 9
+    outb(UBRR0H, (unsigned char)(BAUDRATE_FACTOR >> 8));
+  da:	10 92 90 00 	sts	0x0090, r1
+    outb(UCSR0B, BV(RXEN) | BV(TXEN));
+  de:	88 e1       	ldi	r24, 0x18	; 24
+  e0:	8a b9       	out	0x0a, r24	; 10
+
+	//outp( (BV(RXCIE)|BV(TXCIE)|BV(RXEN)|BV(TXEN)), UCSR0B );
+while(1)
+{	
+	sbi(PORTB,0);
+  e2:	c0 9a       	sbi	0x18, 0	; 24
+	SendOctet('h');
+  e4:	88 e6       	ldi	r24, 0x68	; 104
+  e6:	0e 94 0b 01 	call	0x216
+	SendOctet('e');
+  ea:	85 e6       	ldi	r24, 0x65	; 101
+  ec:	0e 94 0b 01 	call	0x216
+	SendOctet('l');
+  f0:	8c e6       	ldi	r24, 0x6C	; 108
+  f2:	0e 94 0b 01 	call	0x216
+	SendOctet('l');
+  f6:	8c e6       	ldi	r24, 0x6C	; 108
+  f8:	0e 94 0b 01 	call	0x216
+	SendOctet('0');	
+  fc:	80 e3       	ldi	r24, 0x30	; 48
+  fe:	0e 94 0b 01 	call	0x216
+	cbi(PORTB,0);
+ 102:	c0 98       	cbi	0x18, 0	; 24
+		ch=RecvOctet();
+ 104:	0e 94 0f 01 	call	0x21e
+ 108:	ec cf       	rjmp	.-40     	; 0xe2
+
+0000010a <FlashPage>:
+	//SendOctet(ch);
+}
+
+	/*
+     * Wait for the first packet, cancel or end-of-transmission to arrive. 
+     * Continuously send NAKs to initiate the transfer.
+     */
+    pn = 1; /* XMODEM starts with packet number one. */
+    for (;;) {
+		sbi(PORTB,0);
+        ch = RecvPacket(pn, buff);
+		cbi(PORTB,0);
+        if (ch != ASC_TMO && ch != ASC_ERR) {
+            break;
+        }
+        SendOctet(ASC_NAK);
+    }
+
+    /*
+     * We received a packet or a request to stop the transfer. 
+     */
+    ec = 0;
+    bofs = 0;
+    addr = 0;
+    for (;;) {
+
+        /*
+         * Process a packet.
+         */
+        if (ch == ASC_SOH) {
+
+#if XMODEM_PACKET_SIZE != SPM_PAGESIZE
+            /*
+             * If the packet size differs from the size of the flash write
+             * buffer, we assume, that two packets fit into one page. This
+             * may not be true for all AVR devices.
+             */
+            if (pn & 1) {
+                bofs = XMODEM_PACKET_SIZE;
+            } else 
+#endif
+            {
+                FlashPage(addr, buff);
+                addr += SPM_PAGESIZE;
+                bofs = 0;
+            }
+            ec = 0; /* Clear error counter. */
+            pn++;   /* Increment packet number. */
+            ch = ASC_ACK;  /* Respond with ACK. */
+        } 
+        
+        /*
+         * Process end-of-transmission or cancel.
+         */
+        else if (ch == ASC_EOT || ch == ASC_CAN) {
+            FlashPage(addr, buff);
+            SendOctet(ASC_ACK);
+            break;
+        } 
+        
+        /*
+         * Anything else is treated as an error.
+         */
+        else {
+            if (ec++ > MAX_PROTO_ERRORS) {
+                SendOctet(ASC_CAN);
+                break;
+            }
+            ch = ASC_NAK;
+        }
+
+        /*
+         * Send response and receive next packet.
+         */
+        SendOctet(ch);
+        ch = RecvPacket(pn, &buff[bofs]);
+    }
+
+    /*
+     * Will jump into the loaded code.
+     */
+    asm volatile ("jmp 0");
+
+    /*
+     * Never return to stop GCC to include a reference to the exit code.
+     * Actually we will never reach this point, but the compiler doesn't 
+     * understand the assembly statement above.
+     */
+    for (;;);
+}
+
+/*
+ * Write the contents of a buffer to a specified program memory address.
+ *
+ * \param addr Program memory byte address to start writing.
+ * \param data Points to a buffer which contains the data to be written.
+ *
+ * \todo Would be fine to verify the result and return a result to the
+ *       caller.
+ */
+static void FlashPage(unsigned long addr, unsigned char *data)
+{
+ 10a:	cf 92       	push	r12
+ 10c:	df 92       	push	r13
+ 10e:	ef 92       	push	r14
+ 110:	ff 92       	push	r15
+ 112:	0f 93       	push	r16
+ 114:	1f 93       	push	r17
+ 116:	cf 93       	push	r28
+ 118:	df 93       	push	r29
+ 11a:	ec 01       	movw	r28, r24
+ 11c:	db 01       	movw	r26, r22
+ 11e:	6a 01       	movw	r12, r20
+    unsigned long i;
+
+    /*
+     * Erase page.
+     */
+    boot_page_erase(addr);
+ 120:	80 91 68 00 	lds	r24, 0x0068
+ 124:	80 fd       	sbrc	r24, 0
+ 126:	fc cf       	rjmp	.-8      	; 0x120
+ 128:	e1 99       	sbic	0x1c, 1	; 28
+ 12a:	fe cf       	rjmp	.-4      	; 0x128
+ 12c:	83 e0       	ldi	r24, 0x03	; 3
+ 12e:	fd 01       	movw	r30, r26
+ 130:	c0 93 5b 00 	sts	0x005B, r28
+ 134:	80 93 68 00 	sts	0x0068, r24
+ 138:	e8 95       	spm
+    while (boot_rww_busy()) {
+ 13a:	80 91 68 00 	lds	r24, 0x0068
+ 13e:	86 ff       	sbrs	r24, 6
+ 140:	0e c0       	rjmp	.+28     	; 0x15e
+        boot_rww_enable();
+ 142:	80 91 68 00 	lds	r24, 0x0068
+ 146:	80 fd       	sbrc	r24, 0
+ 148:	fc cf       	rjmp	.-8      	; 0x142
+ 14a:	e1 99       	sbic	0x1c, 1	; 28
+ 14c:	fe cf       	rjmp	.-4      	; 0x14a
+ 14e:	81 e1       	ldi	r24, 0x11	; 17
+ 150:	80 93 68 00 	sts	0x0068, r24
+ 154:	e8 95       	spm
+ 156:	80 91 68 00 	lds	r24, 0x0068
+ 15a:	86 fd       	sbrc	r24, 6
+ 15c:	f2 cf       	rjmp	.-28     	; 0x142
+    }
+
+    /*
+     * Fill page buffer.
+     */
+    for (i = addr; i < addr + SPM_PAGESIZE; i += 2) {
+ 15e:	ad 01       	movw	r20, r26
+ 160:	be 01       	movw	r22, r28
+ 162:	e1 2c       	mov	r14, r1
+ 164:	f1 e0       	ldi	r31, 0x01	; 1
+ 166:	ff 2e       	mov	r15, r31
+ 168:	01 2d       	mov	r16, r1
+ 16a:	11 2d       	mov	r17, r1
+ 16c:	ea 0e       	add	r14, r26
+ 16e:	fb 1e       	adc	r15, r27
+ 170:	0c 1f       	adc	r16, r28
+ 172:	1d 1f       	adc	r17, r29
+ 174:	ae 15       	cp	r26, r14
+ 176:	bf 05       	cpc	r27, r15
+ 178:	c0 07       	cpc	r28, r16
+ 17a:	d1 07       	cpc	r29, r17
+ 17c:	20 f5       	brcc	.+72     	; 0x1c6
+        boot_page_fill(i, *data + (*(data + 1) << 8));
+ 17e:	80 91 68 00 	lds	r24, 0x0068
+ 182:	80 fd       	sbrc	r24, 0
+ 184:	fc cf       	rjmp	.-8      	; 0x17e
+ 186:	e1 99       	sbic	0x1c, 1	; 28
+ 188:	fe cf       	rjmp	.-4      	; 0x186
+ 18a:	21 e0       	ldi	r18, 0x01	; 1
+ 18c:	f6 01       	movw	r30, r12
+ 18e:	30 81       	ld	r19, Z
+ 190:	81 81       	ldd	r24, Z+1	; 0x01
+ 192:	99 27       	eor	r25, r25
+ 194:	98 2f       	mov	r25, r24
+ 196:	88 27       	eor	r24, r24
+ 198:	83 0f       	add	r24, r19
+ 19a:	91 1d       	adc	r25, r1
+ 19c:	0c 01       	movw	r0, r24
+ 19e:	fa 01       	movw	r30, r20
+ 1a0:	60 93 5b 00 	sts	0x005B, r22
+ 1a4:	20 93 68 00 	sts	0x0068, r18
+ 1a8:	e8 95       	spm
+ 1aa:	11 24       	eor	r1, r1
+        data += 2;
+ 1ac:	82 e0       	ldi	r24, 0x02	; 2
+ 1ae:	90 e0       	ldi	r25, 0x00	; 0
+ 1b0:	c8 0e       	add	r12, r24
+ 1b2:	d9 1e       	adc	r13, r25
+ 1b4:	4e 5f       	subi	r20, 0xFE	; 254
+ 1b6:	5f 4f       	sbci	r21, 0xFF	; 255
+ 1b8:	6f 4f       	sbci	r22, 0xFF	; 255
+ 1ba:	7f 4f       	sbci	r23, 0xFF	; 255
+ 1bc:	4e 15       	cp	r20, r14
+ 1be:	5f 05       	cpc	r21, r15
+ 1c0:	60 07       	cpc	r22, r16
+ 1c2:	71 07       	cpc	r23, r17
+ 1c4:	e0 f2       	brcs	.-72     	; 0x17e
+    }
+
+    /*
+     * Write page.
+     */
+    boot_page_write(addr);
+ 1c6:	80 91 68 00 	lds	r24, 0x0068
+ 1ca:	80 fd       	sbrc	r24, 0
+ 1cc:	fc cf       	rjmp	.-8      	; 0x1c6
+ 1ce:	e1 99       	sbic	0x1c, 1	; 28
+ 1d0:	fe cf       	rjmp	.-4      	; 0x1ce
+ 1d2:	85 e0       	ldi	r24, 0x05	; 5
+ 1d4:	fd 01       	movw	r30, r26
+ 1d6:	c0 93 5b 00 	sts	0x005B, r28
+ 1da:	80 93 68 00 	sts	0x0068, r24
+ 1de:	e8 95       	spm
+    while (boot_rww_busy()) {
+ 1e0:	80 91 68 00 	lds	r24, 0x0068
+ 1e4:	86 ff       	sbrs	r24, 6
+ 1e6:	0e c0       	rjmp	.+28     	; 0x204
+        boot_rww_enable();
+ 1e8:	80 91 68 00 	lds	r24, 0x0068
+ 1ec:	80 fd       	sbrc	r24, 0
+ 1ee:	fc cf       	rjmp	.-8      	; 0x1e8
+ 1f0:	e1 99       	sbic	0x1c, 1	; 28
+ 1f2:	fe cf       	rjmp	.-4      	; 0x1f0
+ 1f4:	81 e1       	ldi	r24, 0x11	; 17
+ 1f6:	80 93 68 00 	sts	0x0068, r24
+ 1fa:	e8 95       	spm
+ 1fc:	80 91 68 00 	lds	r24, 0x0068
+ 200:	86 fd       	sbrc	r24, 6
+ 202:	f2 cf       	rjmp	.-28     	; 0x1e8
+    }
+}
+ 204:	df 91       	pop	r29
+ 206:	cf 91       	pop	r28
+ 208:	1f 91       	pop	r17
+ 20a:	0f 91       	pop	r16
+ 20c:	ff 90       	pop	r15
+ 20e:	ef 90       	pop	r14
+ 210:	df 90       	pop	r13
+ 212:	cf 90       	pop	r12
+ 214:	08 95       	ret
+
+00000216 <SendOctet>:
+
+/*
+ * Send a byte to the RS232 interface.
+ *
+ * \param ch Byte to send.
+ */
+static void SendOctet(char ch)
+{
+    /* This may differ on your device. */
+    while ((inb(UCSR0A) & _BV(UDRE)) == 0);
+ 216:	5d 9b       	sbis	0x0b, 5	; 11
+ 218:	fe cf       	rjmp	.-4      	; 0x216
+    outb(UDR0, ch);
+ 21a:	8c b9       	out	0x0c, r24	; 12
+}
+ 21c:	08 95       	ret
+
+0000021e <RecvOctet>:
+
+/*
+ * Receive a byte to the RS232 interface.
+ *
+ * \return Byte received or ASC_TMO on timeout.
+ */
+static unsigned char RecvOctet(void)
+{
+    intime = 1;
+ 21e:	81 e0       	ldi	r24, 0x01	; 1
+ 220:	90 e0       	ldi	r25, 0x00	; 0
+ 222:	90 93 01 01 	sts	0x0101, r25
+ 226:	80 93 00 01 	sts	0x0100, r24
+    /* This may differ on your device. */
+    while ((inb(UCSR0A) & _BV(RXC)) == 0) {
+ 22a:	5f 99       	sbic	0x0b, 7	; 11
+ 22c:	11 c0       	rjmp	.+34     	; 0x250
+        if (++intime == 0)
+ 22e:	80 91 00 01 	lds	r24, 0x0100
+ 232:	90 91 01 01 	lds	r25, 0x0101
+ 236:	01 96       	adiw	r24, 0x01	; 1
+ 238:	90 93 01 01 	sts	0x0101, r25
+ 23c:	80 93 00 01 	sts	0x0100, r24
+ 240:	80 91 00 01 	lds	r24, 0x0100
+ 244:	90 91 01 01 	lds	r25, 0x0101
+ 248:	00 97       	sbiw	r24, 0x00	; 0
+ 24a:	21 f0       	breq	.+8      	; 0x254
+            return ASC_TMO;
+ 24c:	5f 9b       	sbis	0x0b, 7	; 11
+ 24e:	ef cf       	rjmp	.-34     	; 0x22e
+    }
+    return inb(UDR0);
+ 250:	8c b1       	in	r24, 0x0c	; 12
+ 252:	99 27       	eor	r25, r25
+}
+ 254:	08 95       	ret
+ 256:	08 95       	ret
+
+00000258 <RecvPacket>:
+
+/*
+ * Receive a protocol packet.
+ *
+ * \param pn Expected packet number.
+ * \param cp Pointer to packet buffer.
+ *
+ * \return - ASC_SOH if a packet has been received.
+ *         - ASC_CAN if remote cancels transmission.
+ *         - ASC_EOT if transmission finished.
+ *         - ASC_ERR on packet format errors.
+ *         - ASC_TMO on timeouts.
+ *
+ * \todo I think that this will fail if the remote missed a previously
+ *       sent ACK.
+ */
+static unsigned char RecvPacket(unsigned char pn, unsigned char *cp)
+{
+ 258:	ef 92       	push	r14
+ 25a:	ff 92       	push	r15
+ 25c:	0f 93       	push	r16
+ 25e:	1f 93       	push	r17
+ 260:	cf 93       	push	r28
+ 262:	08 2f       	mov	r16, r24
+ 264:	7b 01       	movw	r14, r22
+    unsigned char rc; /* Function result. */
+    unsigned char ch; /* Calculated checksum. */
+    unsigned char i;
+
+    /*
+     * Wait for the first character. Ignore anything except SOH, EOT, CAN
+     * or timeout.
+     */
+    for (;;) {
+        if ((rc = RecvOctet()) == ASC_SOH) {
+ 266:	0e 94 0f 01 	call	0x21e
+ 26a:	18 2f       	mov	r17, r24
+ 26c:	81 30       	cpi	r24, 0x01	; 1
+ 26e:	59 f0       	breq	.+22     	; 0x286
+            break;
+        }
+
+        /*
+         * Return if transmission stopped or timed out.
+         */
+        if (!intime || rc == ASC_EOT || rc == ASC_CAN) {
+ 270:	80 91 00 01 	lds	r24, 0x0100
+ 274:	90 91 01 01 	lds	r25, 0x0101
+ 278:	89 2b       	or	r24, r25
+ 27a:	71 f1       	breq	.+92     	; 0x2d8
+ 27c:	14 30       	cpi	r17, 0x04	; 4
+ 27e:	61 f1       	breq	.+88     	; 0x2d8
+ 280:	18 31       	cpi	r17, 0x18	; 24
+ 282:	89 f7       	brne	.-30     	; 0x266
+ 284:	29 c0       	rjmp	.+82     	; 0x2d8
+            return rc;
+        }
+    }
+
+    /*
+     * We got the start of the header (SOH). Next byte will be the packet
+     * number, followed by the inverted packet number.
+     */
+    ch = RecvOctet();
+ 286:	0e 94 0f 01 	call	0x21e
+ 28a:	c8 2f       	mov	r28, r24
+    if (RecvOctet() + ch != 0xFF || ch != pn)
+ 28c:	0e 94 0f 01 	call	0x21e
+ 290:	8c 0f       	add	r24, r28
+ 292:	91 2d       	mov	r25, r1
+ 294:	91 1d       	adc	r25, r1
+ 296:	8f 3f       	cpi	r24, 0xFF	; 255
+ 298:	91 05       	cpc	r25, r1
+ 29a:	09 f4       	brne	.+2      	; 0x29e
+ 29c:	c0 13       	cpse	r28, r16
+        rc = ASC_ERR;
+ 29e:	1f ef       	ldi	r17, 0xFF	; 255
+
+    /*
+     * Even if the packet number had been invalid, continue receiving. This
+     * avoids too many NAK responses by the caller.
+     */
+    ch = 0;
+ 2a0:	c0 e0       	ldi	r28, 0x00	; 0
+    for (i = 0; i < 128; i++) {
+ 2a2:	0c 2f       	mov	r16, r28
+        ch += (*cp++ = RecvOctet());
+ 2a4:	0e 94 0f 01 	call	0x21e
+ 2a8:	f7 01       	movw	r30, r14
+ 2aa:	81 93       	st	Z+, r24
+ 2ac:	7f 01       	movw	r14, r30
+ 2ae:	c8 0f       	add	r28, r24
+        if (!intime) {
+ 2b0:	80 91 00 01 	lds	r24, 0x0100
+ 2b4:	90 91 01 01 	lds	r25, 0x0101
+ 2b8:	00 97       	sbiw	r24, 0x00	; 0
+ 2ba:	81 f0       	breq	.+32     	; 0x2dc
+ 2bc:	0f 5f       	subi	r16, 0xFF	; 255
+ 2be:	07 ff       	sbrs	r16, 7
+ 2c0:	f1 cf       	rjmp	.-30     	; 0x2a4
+            return ASC_TMO;
+        }
+    }
+
+    /*
+     * Finally receive the checksum.
+     */
+    if (ch != RecvOctet() || !intime)
+ 2c2:	0e 94 0f 01 	call	0x21e
+ 2c6:	c8 17       	cp	r28, r24
+ 2c8:	31 f4       	brne	.+12     	; 0x2d6
+ 2ca:	80 91 00 01 	lds	r24, 0x0100
+ 2ce:	90 91 01 01 	lds	r25, 0x0101
+ 2d2:	89 2b       	or	r24, r25
+ 2d4:	09 f4       	brne	.+2      	; 0x2d8
+        rc = ASC_ERR;
+ 2d6:	1f ef       	ldi	r17, 0xFF	; 255
+
+    return rc;
+ 2d8:	81 2f       	mov	r24, r17
+ 2da:	99 27       	eor	r25, r25
+}
+ 2dc:	cf 91       	pop	r28
+ 2de:	1f 91       	pop	r17
+ 2e0:	0f 91       	pop	r16
+ 2e2:	ff 90       	pop	r15
+ 2e4:	ef 90       	pop	r14
+ 2e6:	08 95       	ret
